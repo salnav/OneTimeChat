@@ -1,0 +1,3 @@
+/Users/salmannavroz/PleaseWork/CMakeFiles/PleaseWork.dir
+/Users/salmannavroz/PleaseWork/CMakeFiles/edit_cache.dir
+/Users/salmannavroz/PleaseWork/CMakeFiles/rebuild_cache.dir

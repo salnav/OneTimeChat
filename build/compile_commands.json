@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/Users/salmannavroz/PleaseWork/build",
+  "command": "/usr/bin/clang++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/Users/salmannavroz/PleaseWork/build/PleaseWork_autogen/include -I/usr/local/include/libmongoc-1.0 -I/usr/local/include/libbson-1.0 -I/usr/local/lib -isystem /usr/local/include/mongocxx/v_noabi -isystem /usr/local/include/bsoncxx/v_noabi -isystem /Users/salmannavroz/Qt/QtDesignStudio/qt6_design_studio_reduced_version/lib/QtWidgets.framework/Headers -iframework /Users/salmannavroz/Qt/QtDesignStudio/qt6_design_studio_reduced_version/lib -isystem /Users/salmannavroz/Qt/QtDesignStudio/qt6_design_studio_reduced_version/lib/QtCore.framework/Headers -isystem /Users/salmannavroz/Qt/6.4.2/macos/mkspecs/macx-clang -isystem /Users/salmannavroz/Qt/6.4.2/macos/include -isystem /Users/salmannavroz/Qt/QtDesignStudio/qt6_design_studio_reduced_version/lib/QtGui.framework/Headers  -Wall -Wextra -Werror -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=c++17 -o CMakeFiles/PleaseWork.dir/PleaseWork_autogen/mocs_compilation.cpp.o -c /Users/salmannavroz/PleaseWork/build/PleaseWork_autogen/mocs_compilation.cpp",
+  "file": "/Users/salmannavroz/PleaseWork/build/PleaseWork_autogen/mocs_compilation.cpp"
+},
+{
+  "directory": "/Users/salmannavroz/PleaseWork/build",
+  "command": "/usr/bin/clang++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/Users/salmannavroz/PleaseWork/build/PleaseWork_autogen/include -I/usr/local/include/libmongoc-1.0 -I/usr/local/include/libbson-1.0 -I/usr/local/lib -isystem /usr/local/include/mongocxx/v_noabi -isystem /usr/local/include/bsoncxx/v_noabi -isystem /Users/salmannavroz/Qt/QtDesignStudio/qt6_design_studio_reduced_version/lib/QtWidgets.framework/Headers -iframework /Users/salmannavroz/Qt/QtDesignStudio/qt6_design_studio_reduced_version/lib -isystem /Users/salmannavroz/Qt/QtDesignStudio/qt6_design_studio_reduced_version/lib/QtCore.framework/Headers -isystem /Users/salmannavroz/Qt/6.4.2/macos/mkspecs/macx-clang -isystem /Users/salmannavroz/Qt/6.4.2/macos/include -isystem /Users/salmannavroz/Qt/QtDesignStudio/qt6_design_studio_reduced_version/lib/QtGui.framework/Headers  -Wall -Wextra -Werror -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=c++17 -o CMakeFiles/PleaseWork.dir/main.cpp.o -c /Users/salmannavroz/PleaseWork/main.cpp",
+  "file": "/Users/salmannavroz/PleaseWork/main.cpp"
+}
+]

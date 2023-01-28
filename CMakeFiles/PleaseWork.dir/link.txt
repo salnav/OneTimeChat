@@ -1,0 +1,1 @@
+/Library/Developer/CommandLineTools/usr/bin/c++  -Wall -Wextra -Werror -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/PleaseWork.dir/main.cpp.o -o PleaseWork  -Wl,-rpath,/usr/local/lib /usr/local/lib/libmongocxx.3.7.0.dylib /usr/local/lib/libbsoncxx.3.7.0.dylib 
