@@ -45,8 +45,8 @@
 #define __DECIMAL_DIG__ __LDBL_DECIMAL_DIG__
 #define __DEPRECATED 1
 #define __DYNAMIC__ 1
-#define __ENVIRONMENT_MAC_OS_X_VERSION_MIN_REQUIRED__ 110000
-#define __ENVIRONMENT_OS_VERSION_MIN_REQUIRED__ 110000
+#define __ENVIRONMENT_MAC_OS_X_VERSION_MIN_REQUIRED__ 130000
+#define __ENVIRONMENT_OS_VERSION_MIN_REQUIRED__ 130000
 #define __EXCEPTIONS 1
 #define __FINITE_MATH_ONLY__ 0
 #define __FLT16_DECIMAL_DIG__ 5
@@ -92,6 +92,7 @@
 #define __GCC_ATOMIC_SHORT_LOCK_FREE 2
 #define __GCC_ATOMIC_TEST_AND_SET_TRUEVAL 1
 #define __GCC_ATOMIC_WCHAR_T_LOCK_FREE 2
+#define __GCC_HAVE_DWARF2_CFI_ASM 1
 #define __GCC_HAVE_SYNC_COMPARE_AND_SWAP_1 1
 #define __GCC_HAVE_SYNC_COMPARE_AND_SWAP_16 1
 #define __GCC_HAVE_SYNC_COMPARE_AND_SWAP_2 1
@@ -171,6 +172,7 @@
 #define __INT_LEAST8_MAX__ 127
 #define __INT_LEAST8_TYPE__ signed char
 #define __INT_MAX__ 2147483647
+#define __LAHF_SAHF__ 1
 #define __LDBL_DECIMAL_DIG__ 21
 #define __LDBL_DENORM_MIN__ 3.64519953188247460253e-4951L
 #define __LDBL_DIG__ 18
@@ -246,6 +248,7 @@
 #define __SSP__ 1
 #define __SSSE3__ 1
 #define __STDCPP_DEFAULT_NEW_ALIGNMENT__ 16UL
+#define __STDCPP_THREADS__ 1
 #define __STDC_HOSTED__ 1
 #define __STDC_NO_THREADS__ 1
 #define __STDC_UTF_16__ 1
@@ -343,7 +346,7 @@
 #define __UINT_LEAST8_MAX__ 255
 #define __UINT_LEAST8_TYPE__ unsigned char
 #define __USER_LABEL_PREFIX__ _
-#define __VERSION__ "Apple LLVM 12.0.5 (clang-1205.0.22.9)"
+#define __VERSION__ "Apple LLVM 14.0.0 (clang-1400.0.29.202)"
 #define __WCHAR_MAX__ 2147483647
 #define __WCHAR_TYPE__ int
 #define __WCHAR_WIDTH__ 32
@@ -352,13 +355,15 @@
 #define __WINT_WIDTH__ 32
 #define __amd64 1
 #define __amd64__ 1
-#define __apple_build_version__ 12050022
+#define __apple_build_version__ 14000029
 #define __block __attribute__((__blocks__(byref)))
 #define __clang__ 1
-#define __clang_major__ 12
+#define __clang_literal_encoding__ "UTF-8"
+#define __clang_major__ 14
 #define __clang_minor__ 0
-#define __clang_patchlevel__ 5
-#define __clang_version__ "12.0.5 (clang-1205.0.22.9)"
+#define __clang_patchlevel__ 0
+#define __clang_version__ "14.0.0 (clang-1400.0.29.202)"
+#define __clang_wide_literal_encoding__ "UTF-32"
 #define __code_model_small__ 1
 #define __core2 1
 #define __core2__ 1

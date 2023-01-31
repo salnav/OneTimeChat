@@ -24,8 +24,8 @@ endif()
 # These are internal implementation details. They may be removed at any time.
 set(__QT_DEPLOY_SYSTEM_NAME "Darwin")
 set(__QT_DEPLOY_IS_SHARED_LIBS_BUILD "ON")
-set(__QT_DEPLOY_TOOL "/Users/salmannavroz/Qt/6.4.2/macos/bin/macdeployqt")
-set(__QT_DEPLOY_IMPL_DIR "/Users/salmannavroz/PleaseWork/build/.qt")
+set(__QT_DEPLOY_TOOL "/Users/hritikbharucha/Qt/6.4.0/macos/bin/macdeployqt")
+set(__QT_DEPLOY_IMPL_DIR "/Users/hritikbharucha/Desktop/C++/PleaseWork/build/.qt")
 set(__QT_DEPLOY_VERBOSE "")
 set(__QT_CMAKE_EXPORT_NAMESPACE "Qt6")
 set(__QT_DEPLOY_GENERATOR_IS_MULTI_CONFIG "0")
@@ -35,7 +35,7 @@ set(__QT_DEFAULT_MAJOR_VERSION "6")
 
 # Define the CMake commands to be made available during deployment.
 set(__qt_deploy_support_files
-    "/Users/salmannavroz/Qt/QtDesignStudio/qt6_design_studio_reduced_version/lib/cmake/Qt6Core/Qt6CoreDeploySupport.cmake"
+    "/Users/hritikbharucha/Qt/6.4.0/macos/lib/cmake/Qt6Core/Qt6CoreDeploySupport.cmake"
 )
 foreach(__qt_deploy_support_file IN LISTS __qt_deploy_support_files)
     include("${__qt_deploy_support_file}")

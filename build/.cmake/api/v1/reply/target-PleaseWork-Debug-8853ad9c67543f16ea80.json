@@ -22,16 +22,16 @@
 		"files" : 
 		[
 			"CMakeLists.txt",
-			"/Users/salmannavroz/Qt/QtDesignStudio/qt6_design_studio_reduced_version/lib/cmake/Qt6Widgets/Qt6WidgetsTargets.cmake",
-			"/Users/salmannavroz/Qt/QtDesignStudio/qt6_design_studio_reduced_version/lib/cmake/Qt6Widgets/Qt6WidgetsConfig.cmake",
-			"/Users/salmannavroz/Qt/6.4.2/macos/lib/cmake/Qt6/Qt6Config.cmake",
-			"/Users/salmannavroz/Qt/QtDesignStudio/qt6_design_studio_reduced_version/lib/cmake/Qt6Core/Qt6CoreTargets.cmake",
-			"/Users/salmannavroz/Qt/QtDesignStudio/qt6_design_studio_reduced_version/lib/cmake/Qt6Core/Qt6CoreConfig.cmake",
-			"/Applications/CMake.app/Contents/share/cmake-3.25/Modules/CMakeFindDependencyMacro.cmake",
-			"/Users/salmannavroz/Qt/6.4.2/macos/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake",
-			"/Users/salmannavroz/Qt/QtDesignStudio/qt6_design_studio_reduced_version/lib/cmake/Qt6Widgets/Qt6WidgetsDependencies.cmake",
-			"/Users/salmannavroz/Qt/QtDesignStudio/qt6_design_studio_reduced_version/lib/cmake/Qt6Gui/Qt6GuiTargets.cmake",
-			"/Users/salmannavroz/Qt/QtDesignStudio/qt6_design_studio_reduced_version/lib/cmake/Qt6Gui/Qt6GuiConfig.cmake"
+			"/Users/hritikbharucha/Qt/6.4.0/macos/lib/cmake/Qt6Widgets/Qt6WidgetsTargets.cmake",
+			"/Users/hritikbharucha/Qt/6.4.0/macos/lib/cmake/Qt6Widgets/Qt6WidgetsConfig.cmake",
+			"/Users/hritikbharucha/Qt/6.4.0/macos/lib/cmake/Qt6/Qt6Config.cmake",
+			"/Users/hritikbharucha/Qt/6.4.0/macos/lib/cmake/Qt6Core/Qt6CoreTargets.cmake",
+			"/Users/hritikbharucha/Qt/6.4.0/macos/lib/cmake/Qt6Core/Qt6CoreConfig.cmake",
+			"/usr/local/Cellar/cmake/3.25.2/share/cmake/Modules/CMakeFindDependencyMacro.cmake",
+			"/Users/hritikbharucha/Qt/6.4.0/macos/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake",
+			"/Users/hritikbharucha/Qt/6.4.0/macos/lib/cmake/Qt6Widgets/Qt6WidgetsDependencies.cmake",
+			"/Users/hritikbharucha/Qt/6.4.0/macos/lib/cmake/Qt6Gui/Qt6GuiTargets.cmake",
+			"/Users/hritikbharucha/Qt/6.4.0/macos/lib/cmake/Qt6Gui/Qt6GuiConfig.cmake"
 		],
 		"nodes" : 
 		[
@@ -75,7 +75,7 @@
 			{
 				"command" : 4,
 				"file" : 3,
-				"line" : 157,
+				"line" : 213,
 				"parent" : 6
 			},
 			{
@@ -216,7 +216,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : " -Wall -Wextra -Werror -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk"
+					"fragment" : " -Wall -Wextra -Werror -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -mmacosx-version-min=13.0"
 				},
 				{
 					"fragment" : "-std=c++17"
@@ -241,7 +241,7 @@
 			[
 				{
 					"backtrace" : 0,
-					"path" : "/Users/salmannavroz/PleaseWork/build/PleaseWork_autogen/include"
+					"path" : "/Users/hritikbharucha/Desktop/C++/PleaseWork/build/PleaseWork_autogen/include"
 				},
 				{
 					"backtrace" : 27,
@@ -268,42 +268,42 @@
 				{
 					"backtrace" : 4,
 					"isSystem" : true,
-					"path" : "/Users/salmannavroz/Qt/QtDesignStudio/qt6_design_studio_reduced_version/lib/QtWidgets.framework/Headers"
+					"path" : "/Users/hritikbharucha/Qt/6.4.0/macos/lib/QtWidgets.framework/Headers"
 				},
 				{
 					"backtrace" : 4,
 					"isSystem" : true,
-					"path" : "/Users/salmannavroz/Qt/QtDesignStudio/qt6_design_studio_reduced_version/lib/QtWidgets.framework"
+					"path" : "/Users/hritikbharucha/Qt/6.4.0/macos/lib/QtWidgets.framework"
 				},
 				{
 					"backtrace" : 4,
 					"isSystem" : true,
-					"path" : "/Users/salmannavroz/Qt/QtDesignStudio/qt6_design_studio_reduced_version/lib/QtCore.framework/Headers"
+					"path" : "/Users/hritikbharucha/Qt/6.4.0/macos/lib/QtCore.framework/Headers"
 				},
 				{
 					"backtrace" : 4,
 					"isSystem" : true,
-					"path" : "/Users/salmannavroz/Qt/QtDesignStudio/qt6_design_studio_reduced_version/lib/QtCore.framework"
+					"path" : "/Users/hritikbharucha/Qt/6.4.0/macos/lib/QtCore.framework"
 				},
 				{
 					"backtrace" : 4,
 					"isSystem" : true,
-					"path" : "/Users/salmannavroz/Qt/6.4.2/macos/mkspecs/macx-clang"
+					"path" : "/Users/hritikbharucha/Qt/6.4.0/macos/mkspecs/macx-clang"
 				},
 				{
 					"backtrace" : 4,
 					"isSystem" : true,
-					"path" : "/Users/salmannavroz/Qt/6.4.2/macos/include"
+					"path" : "/Users/hritikbharucha/Qt/6.4.0/macos/include"
 				},
 				{
 					"backtrace" : 4,
 					"isSystem" : true,
-					"path" : "/Users/salmannavroz/Qt/QtDesignStudio/qt6_design_studio_reduced_version/lib/QtGui.framework/Headers"
+					"path" : "/Users/hritikbharucha/Qt/6.4.0/macos/lib/QtGui.framework/Headers"
 				},
 				{
 					"backtrace" : 4,
 					"isSystem" : true,
-					"path" : "/Users/salmannavroz/Qt/QtDesignStudio/qt6_design_studio_reduced_version/lib/QtGui.framework"
+					"path" : "/Users/hritikbharucha/Qt/6.4.0/macos/lib/QtGui.framework"
 				}
 			],
 			"language" : "CXX",
@@ -344,11 +344,11 @@
 				"role" : "flags"
 			},
 			{
-				"fragment" : "-F/Users/salmannavroz/Qt/QtDesignStudio/qt6_design_studio_reduced_version/lib",
+				"fragment" : "-F/Users/hritikbharucha/Qt/6.4.0/macos/lib",
 				"role" : "frameworkPath"
 			},
 			{
-				"fragment" : "-Wl,-rpath,/usr/local/lib -Wl,-rpath,/Users/salmannavroz/Qt/QtDesignStudio/qt6_design_studio_reduced_version/lib",
+				"fragment" : "-Wl,-rpath,/usr/local/lib -Wl,-rpath,/Users/hritikbharucha/Qt/6.4.0/macos/lib",
 				"role" : "libraries"
 			},
 			{
@@ -363,17 +363,17 @@
 			},
 			{
 				"backtrace" : 4,
-				"fragment" : "/Users/salmannavroz/Qt/QtDesignStudio/qt6_design_studio_reduced_version/lib/QtWidgets.framework/Versions/A/QtWidgets",
+				"fragment" : "/Users/hritikbharucha/Qt/6.4.0/macos/lib/QtWidgets.framework/Versions/A/QtWidgets",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 11,
-				"fragment" : "/Users/salmannavroz/Qt/QtDesignStudio/qt6_design_studio_reduced_version/lib/QtGui.framework/Versions/A/QtGui",
+				"fragment" : "/Users/hritikbharucha/Qt/6.4.0/macos/lib/QtGui.framework/Versions/A/QtGui",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 11,
-				"fragment" : "/Users/salmannavroz/Qt/QtDesignStudio/qt6_design_studio_reduced_version/lib/QtCore.framework/Versions/A/QtCore",
+				"fragment" : "/Users/hritikbharucha/Qt/6.4.0/macos/lib/QtCore.framework/Versions/A/QtCore",
 				"role" : "libraries"
 			},
 			{

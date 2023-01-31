@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/clang++
 CXX_DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
 
-CXX_INCLUDES = -I/Users/salmannavroz/PleaseWork/build/PleaseWork_autogen/include -I/usr/local/include/libmongoc-1.0 -I/usr/local/include/libbson-1.0 -I/usr/local/lib -isystem /usr/local/include/mongocxx/v_noabi -isystem /usr/local/include/bsoncxx/v_noabi -isystem /Users/salmannavroz/Qt/QtDesignStudio/qt6_design_studio_reduced_version/lib/QtWidgets.framework/Headers -iframework /Users/salmannavroz/Qt/QtDesignStudio/qt6_design_studio_reduced_version/lib -isystem /Users/salmannavroz/Qt/QtDesignStudio/qt6_design_studio_reduced_version/lib/QtCore.framework/Headers -isystem /Users/salmannavroz/Qt/6.4.2/macos/mkspecs/macx-clang -isystem /Users/salmannavroz/Qt/6.4.2/macos/include -isystem /Users/salmannavroz/Qt/QtDesignStudio/qt6_design_studio_reduced_version/lib/QtGui.framework/Headers
+CXX_INCLUDES = -I/Users/hritikbharucha/Desktop/C++/PleaseWork/build/PleaseWork_autogen/include -I/usr/local/include/libmongoc-1.0 -I/usr/local/include/libbson-1.0 -I/usr/local/lib -isystem /usr/local/include/mongocxx/v_noabi -isystem /usr/local/include/bsoncxx/v_noabi -isystem /Users/hritikbharucha/Qt/6.4.0/macos/lib/QtWidgets.framework/Headers -iframework /Users/hritikbharucha/Qt/6.4.0/macos/lib -isystem /Users/hritikbharucha/Qt/6.4.0/macos/lib/QtCore.framework/Headers -isystem /Users/hritikbharucha/Qt/6.4.0/macos/mkspecs/macx-clang -isystem /Users/hritikbharucha/Qt/6.4.0/macos/include -isystem /Users/hritikbharucha/Qt/6.4.0/macos/lib/QtGui.framework/Headers
 
-CXX_FLAGS =  -Wall -Wextra -Werror -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk -std=c++17
+CXX_FLAGS =  -Wall -Wextra -Werror -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -mmacosx-version-min=13.0 -std=c++17
 

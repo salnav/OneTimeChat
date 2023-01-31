@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/salmannavroz/PleaseWork/build/PleaseWork_autogen/mocs_compilation.cpp" "CMakeFiles/PleaseWork.dir/PleaseWork_autogen/mocs_compilation.cpp.o" "gcc" "CMakeFiles/PleaseWork.dir/PleaseWork_autogen/mocs_compilation.cpp.o.d"
-  "/Users/salmannavroz/PleaseWork/main.cpp" "CMakeFiles/PleaseWork.dir/main.cpp.o" "gcc" "CMakeFiles/PleaseWork.dir/main.cpp.o.d"
+  "/Users/hritikbharucha/Desktop/C++/PleaseWork/build/PleaseWork_autogen/mocs_compilation.cpp" "CMakeFiles/PleaseWork.dir/PleaseWork_autogen/mocs_compilation.cpp.o" "gcc" "CMakeFiles/PleaseWork.dir/PleaseWork_autogen/mocs_compilation.cpp.o.d"
+  "/Users/hritikbharucha/Desktop/C++/PleaseWork/main.cpp" "CMakeFiles/PleaseWork.dir/main.cpp.o" "gcc" "CMakeFiles/PleaseWork.dir/main.cpp.o.d"
   )
 
 # Targets to which this target links.

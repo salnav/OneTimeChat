@@ -1,4 +1,4 @@
-/Users/salmannavroz/PleaseWork/build/CMakeFiles/PleaseWork.dir
-/Users/salmannavroz/PleaseWork/build/CMakeFiles/edit_cache.dir
-/Users/salmannavroz/PleaseWork/build/CMakeFiles/rebuild_cache.dir
-/Users/salmannavroz/PleaseWork/build/CMakeFiles/PleaseWork_autogen.dir
+/Users/hritikbharucha/Desktop/C++/PleaseWork/build/CMakeFiles/PleaseWork.dir
+/Users/hritikbharucha/Desktop/C++/PleaseWork/build/CMakeFiles/edit_cache.dir
+/Users/hritikbharucha/Desktop/C++/PleaseWork/build/CMakeFiles/rebuild_cache.dir
+/Users/hritikbharucha/Desktop/C++/PleaseWork/build/CMakeFiles/PleaseWork_autogen.dir

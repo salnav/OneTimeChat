@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Users/salmannavroz/PleaseWork/build"
+			"value" : "/Users/hritikbharucha/Desktop/C++/PleaseWork/build"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -119,7 +119,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Applications/CMake.app/Contents/bin/cmake"
+			"value" : "/usr/local/Cellar/cmake/3.25.2/bin/cmake"
 		},
 		{
 			"name" : "CMAKE_CPACK_COMMAND",
@@ -131,7 +131,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Applications/CMake.app/Contents/bin/cpack"
+			"value" : "/usr/local/Cellar/cmake/3.25.2/bin/cpack"
 		},
 		{
 			"name" : "CMAKE_CTEST_COMMAND",
@@ -143,7 +143,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Applications/CMake.app/Contents/bin/ctest"
+			"value" : "/usr/local/Cellar/cmake/3.25.2/bin/ctest"
 		},
 		{
 			"name" : "CMAKE_CXX_COMPILER",
@@ -363,7 +363,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Applications/CMake.app/Contents/bin/ccmake"
+			"value" : "/usr/local/Cellar/cmake/3.25.2/bin/ccmake"
 		},
 		{
 			"name" : "CMAKE_EXECUTABLE_FORMAT",
@@ -491,7 +491,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/salmannavroz/PleaseWork/build/CMakeFiles/pkgRedirects"
+			"value" : "/Users/hritikbharucha/Desktop/C++/PleaseWork/build/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -563,7 +563,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Users/salmannavroz/PleaseWork"
+			"value" : "/Users/hritikbharucha/Desktop/C++/PleaseWork"
 		},
 		{
 			"name" : "CMAKE_INSTALL_BINDIR",
@@ -1043,7 +1043,7 @@
 				}
 			],
 			"type" : "STRING",
-			"value" : ""
+			"value" : "13.0"
 		},
 		{
 			"name" : "CMAKE_OSX_SYSROOT",
@@ -1055,7 +1055,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk"
+			"value" : "/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk"
 		},
 		{
 			"name" : "CMAKE_PLATFORM_INFO_INITIALIZED",
@@ -1147,7 +1147,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/Applications/CMake.app/Contents/share/cmake-3.25"
+			"value" : "/usr/local/Cellar/cmake/3.25.2/share/cmake"
 		},
 		{
 			"name" : "CMAKE_SHARED_LINKER_FLAGS",
@@ -1395,7 +1395,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "[/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/System/Library/Frameworks/OpenGL.framework][/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/System/Library/Frameworks/OpenGL.framework][c ][v()]"
+			"value" : "[/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/System/Library/Frameworks/OpenGL.framework][/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/System/Library/Frameworks/OpenGL.framework][c ][v()]"
 		},
 		{
 			"name" : "FIND_PACKAGE_MESSAGE_DETAILS_Threads",
@@ -1455,7 +1455,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/Users/salmannavroz/Qt/QtDesignStudio/qt6_design_studio_reduced_version/bin/macdeployqt"
+			"value" : "/Users/hritikbharucha/Qt/6.4.0/macos/bin/macdeployqt"
 		},
 		{
 			"name" : "OPENGL_INCLUDE_DIR",
@@ -1471,7 +1471,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/System/Library/Frameworks/OpenGL.framework"
+			"value" : "/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/System/Library/Frameworks/OpenGL.framework"
 		},
 		{
 			"name" : "OPENGL_gl_LIBRARY",
@@ -1487,7 +1487,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/System/Library/Frameworks/OpenGL.framework"
+			"value" : "/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/System/Library/Frameworks/OpenGL.framework"
 		},
 		{
 			"name" : "OPENGL_glu_LIBRARY",
@@ -1503,7 +1503,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/System/Library/Frameworks/OpenGL.framework"
+			"value" : "/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/System/Library/Frameworks/OpenGL.framework"
 		},
 		{
 			"name" : "PleaseWork_BINARY_DIR",
@@ -1515,7 +1515,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/salmannavroz/PleaseWork/build"
+			"value" : "/Users/hritikbharucha/Desktop/C++/PleaseWork/build"
 		},
 		{
 			"name" : "PleaseWork_IS_TOP_LEVEL",
@@ -1539,7 +1539,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/Users/salmannavroz/PleaseWork"
+			"value" : "/Users/hritikbharucha/Desktop/C++/PleaseWork"
 		},
 		{
 			"name" : "QT_ADDITIONAL_HOST_PACKAGES_PREFIX_PATH",
@@ -5838,30 +5838,6 @@
 			"value" : "OFF"
 		},
 		{
-			"name" : "Qt5_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "The directory containing a CMake configuration file for Qt5."
-				}
-			],
-			"type" : "PATH",
-			"value" : "Qt5_DIR-NOTFOUND"
-		},
-		{
-			"name" : "Qt6CoreTools_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "The directory containing a CMake configuration file for Qt6CoreTools."
-				}
-			],
-			"type" : "PATH",
-			"value" : "Qt6CoreTools_DIR-NOTFOUND"
-		},
-		{
 			"name" : "Qt6Core_DIR",
 			"properties" : 
 			[
@@ -5871,7 +5847,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "/Users/salmannavroz/Qt/QtDesignStudio/qt6_design_studio_reduced_version/lib/cmake/Qt6Core"
+			"value" : "/Users/hritikbharucha/Qt/6.4.0/macos/lib/cmake/Qt6Core"
 		},
 		{
 			"name" : "Qt6DBusTools_DIR",
@@ -5883,7 +5859,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "/Users/salmannavroz/Qt/QtDesignStudio/qt6_design_studio_reduced_version/lib/cmake/Qt6DBusTools"
+			"value" : "/Users/hritikbharucha/Qt/6.4.0/macos/lib/cmake/Qt6DBusTools"
 		},
 		{
 			"name" : "Qt6DBus_DIR",
@@ -5895,19 +5871,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "/Users/salmannavroz/Qt/QtDesignStudio/qt6_design_studio_reduced_version/lib/cmake/Qt6DBus"
-		},
-		{
-			"name" : "Qt6GuiTools_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "The directory containing a CMake configuration file for Qt6GuiTools."
-				}
-			],
-			"type" : "PATH",
-			"value" : "Qt6GuiTools_DIR-NOTFOUND"
+			"value" : "/Users/hritikbharucha/Qt/6.4.0/macos/lib/cmake/Qt6DBus"
 		},
 		{
 			"name" : "Qt6Gui_DIR",
@@ -5919,7 +5883,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "/Users/salmannavroz/Qt/QtDesignStudio/qt6_design_studio_reduced_version/lib/cmake/Qt6Gui"
+			"value" : "/Users/hritikbharucha/Qt/6.4.0/macos/lib/cmake/Qt6Gui"
 		},
 		{
 			"name" : "Qt6WidgetsTools_DIR",
@@ -5931,7 +5895,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "/Users/salmannavroz/Qt/QtDesignStudio/qt6_design_studio_reduced_version/lib/cmake/Qt6WidgetsTools"
+			"value" : "/Users/hritikbharucha/Qt/6.4.0/macos/lib/cmake/Qt6WidgetsTools"
 		},
 		{
 			"name" : "Qt6Widgets_DIR",
@@ -5943,19 +5907,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "/Users/salmannavroz/Qt/QtDesignStudio/qt6_design_studio_reduced_version/lib/cmake/Qt6Widgets"
-		},
-		{
-			"name" : "Qt6_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "The directory containing a CMake configuration file for Qt6."
-				}
-			],
-			"type" : "PATH",
-			"value" : "Qt6_DIR-NOTFOUND"
+			"value" : "/Users/hritikbharucha/Qt/6.4.0/macos/lib/cmake/Qt6Widgets"
 		},
 		{
 			"name" : "WrapOpenGL_AGL",
@@ -5967,7 +5919,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.sdk/System/Library/Frameworks/AGL.framework"
+			"value" : "/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/System/Library/Frameworks/AGL.framework"
 		},
 		{
 			"name" : "_GNUInstallDirs_LAST_CMAKE_INSTALL_PREFIX",

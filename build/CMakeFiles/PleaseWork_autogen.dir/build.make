@@ -44,19 +44,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /Applications/CMake.app/Contents/bin/cmake
+CMAKE_COMMAND = /usr/local/Cellar/cmake/3.25.2/bin/cmake
 
 # The command to remove a file.
-RM = /Applications/CMake.app/Contents/bin/cmake -E rm -f
+RM = /usr/local/Cellar/cmake/3.25.2/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/salmannavroz/PleaseWork
+CMAKE_SOURCE_DIR = /Users/hritikbharucha/Desktop/C++/PleaseWork
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/salmannavroz/PleaseWork/build
+CMAKE_BINARY_DIR = /Users/hritikbharucha/Desktop/C++/PleaseWork/build
 
 # Utility rule file for PleaseWork_autogen.
 
@@ -67,8 +67,8 @@ include CMakeFiles/PleaseWork_autogen.dir/compiler_depend.make
 include CMakeFiles/PleaseWork_autogen.dir/progress.make
 
 CMakeFiles/PleaseWork_autogen:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/Users/salmannavroz/PleaseWork/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target PleaseWork"
-	/Applications/CMake.app/Contents/bin/cmake -E cmake_autogen /Users/salmannavroz/PleaseWork/build/CMakeFiles/PleaseWork_autogen.dir/AutogenInfo.json Debug
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/Users/hritikbharucha/Desktop/C++/PleaseWork/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC and UIC for target PleaseWork"
+	/usr/local/Cellar/cmake/3.25.2/bin/cmake -E cmake_autogen /Users/hritikbharucha/Desktop/C++/PleaseWork/build/CMakeFiles/PleaseWork_autogen.dir/AutogenInfo.json Debug
 
 PleaseWork_autogen: CMakeFiles/PleaseWork_autogen
 PleaseWork_autogen: CMakeFiles/PleaseWork_autogen.dir/build.make
@@ -83,6 +83,6 @@ CMakeFiles/PleaseWork_autogen.dir/clean:
 .PHONY : CMakeFiles/PleaseWork_autogen.dir/clean
 
 CMakeFiles/PleaseWork_autogen.dir/depend:
-	cd /Users/salmannavroz/PleaseWork/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/salmannavroz/PleaseWork /Users/salmannavroz/PleaseWork /Users/salmannavroz/PleaseWork/build /Users/salmannavroz/PleaseWork/build /Users/salmannavroz/PleaseWork/build/CMakeFiles/PleaseWork_autogen.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/hritikbharucha/Desktop/C++/PleaseWork/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/hritikbharucha/Desktop/C++/PleaseWork /Users/hritikbharucha/Desktop/C++/PleaseWork /Users/hritikbharucha/Desktop/C++/PleaseWork/build /Users/hritikbharucha/Desktop/C++/PleaseWork/build /Users/hritikbharucha/Desktop/C++/PleaseWork/build/CMakeFiles/PleaseWork_autogen.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/PleaseWork_autogen.dir/depend
 

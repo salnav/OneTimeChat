@@ -10,7 +10,10 @@
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
             "environment": [
-                {"name":"PKG_CONFIG_PATH","value":"/usr/local/Cellar/libmongocxx/3.6.1/lib/pkgconfig"}
+                {
+                    "name": "PKG_CONFIG_PATH",
+                    "value": "/usr/local/Cellar/libmongocxx/3.6.1/lib/pkgconfig"
+                }
             ],
             "externalConsole": false,
             "MIMode": "lldb",
@@ -21,7 +24,8 @@
                     "ignoreFailures": true
                 }
             ],
-            "preLaunchTask": "C++ Build"
+            "preLaunchTask": "C++ Build",
+            "visualizerFile": "/Users/hritikbharucha/Library/Application Support/Code/User/workspaceStorage/1fbb1d461f48ac586699ec0368198c73/tonka3000.qtvsctools/qt.natvis.xml"
         }
     ]
 }

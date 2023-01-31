@@ -44,19 +44,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /Applications/CMake.app/Contents/bin/cmake
+CMAKE_COMMAND = /usr/local/Cellar/cmake/3.25.2/bin/cmake
 
 # The command to remove a file.
-RM = /Applications/CMake.app/Contents/bin/cmake -E rm -f
+RM = /usr/local/Cellar/cmake/3.25.2/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/salmannavroz/PleaseWork
+CMAKE_SOURCE_DIR = /Users/hritikbharucha/Desktop/C++/PleaseWork
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/salmannavroz/PleaseWork/build
+CMAKE_BINARY_DIR = /Users/hritikbharucha/Desktop/C++/PleaseWork/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/PleaseWork.dir/depend.make
@@ -72,30 +72,30 @@ include CMakeFiles/PleaseWork.dir/flags.make
 CMakeFiles/PleaseWork.dir/PleaseWork_autogen/mocs_compilation.cpp.o: CMakeFiles/PleaseWork.dir/flags.make
 CMakeFiles/PleaseWork.dir/PleaseWork_autogen/mocs_compilation.cpp.o: PleaseWork_autogen/mocs_compilation.cpp
 CMakeFiles/PleaseWork.dir/PleaseWork_autogen/mocs_compilation.cpp.o: CMakeFiles/PleaseWork.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/salmannavroz/PleaseWork/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/PleaseWork.dir/PleaseWork_autogen/mocs_compilation.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PleaseWork.dir/PleaseWork_autogen/mocs_compilation.cpp.o -MF CMakeFiles/PleaseWork.dir/PleaseWork_autogen/mocs_compilation.cpp.o.d -o CMakeFiles/PleaseWork.dir/PleaseWork_autogen/mocs_compilation.cpp.o -c /Users/salmannavroz/PleaseWork/build/PleaseWork_autogen/mocs_compilation.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hritikbharucha/Desktop/C++/PleaseWork/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/PleaseWork.dir/PleaseWork_autogen/mocs_compilation.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PleaseWork.dir/PleaseWork_autogen/mocs_compilation.cpp.o -MF CMakeFiles/PleaseWork.dir/PleaseWork_autogen/mocs_compilation.cpp.o.d -o CMakeFiles/PleaseWork.dir/PleaseWork_autogen/mocs_compilation.cpp.o -c /Users/hritikbharucha/Desktop/C++/PleaseWork/build/PleaseWork_autogen/mocs_compilation.cpp
 
 CMakeFiles/PleaseWork.dir/PleaseWork_autogen/mocs_compilation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PleaseWork.dir/PleaseWork_autogen/mocs_compilation.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/salmannavroz/PleaseWork/build/PleaseWork_autogen/mocs_compilation.cpp > CMakeFiles/PleaseWork.dir/PleaseWork_autogen/mocs_compilation.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/hritikbharucha/Desktop/C++/PleaseWork/build/PleaseWork_autogen/mocs_compilation.cpp > CMakeFiles/PleaseWork.dir/PleaseWork_autogen/mocs_compilation.cpp.i
 
 CMakeFiles/PleaseWork.dir/PleaseWork_autogen/mocs_compilation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PleaseWork.dir/PleaseWork_autogen/mocs_compilation.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/salmannavroz/PleaseWork/build/PleaseWork_autogen/mocs_compilation.cpp -o CMakeFiles/PleaseWork.dir/PleaseWork_autogen/mocs_compilation.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/hritikbharucha/Desktop/C++/PleaseWork/build/PleaseWork_autogen/mocs_compilation.cpp -o CMakeFiles/PleaseWork.dir/PleaseWork_autogen/mocs_compilation.cpp.s
 
 CMakeFiles/PleaseWork.dir/main.cpp.o: CMakeFiles/PleaseWork.dir/flags.make
-CMakeFiles/PleaseWork.dir/main.cpp.o: /Users/salmannavroz/PleaseWork/main.cpp
+CMakeFiles/PleaseWork.dir/main.cpp.o: /Users/hritikbharucha/Desktop/C++/PleaseWork/main.cpp
 CMakeFiles/PleaseWork.dir/main.cpp.o: CMakeFiles/PleaseWork.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/salmannavroz/PleaseWork/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/PleaseWork.dir/main.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PleaseWork.dir/main.cpp.o -MF CMakeFiles/PleaseWork.dir/main.cpp.o.d -o CMakeFiles/PleaseWork.dir/main.cpp.o -c /Users/salmannavroz/PleaseWork/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hritikbharucha/Desktop/C++/PleaseWork/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/PleaseWork.dir/main.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/PleaseWork.dir/main.cpp.o -MF CMakeFiles/PleaseWork.dir/main.cpp.o.d -o CMakeFiles/PleaseWork.dir/main.cpp.o -c /Users/hritikbharucha/Desktop/C++/PleaseWork/main.cpp
 
 CMakeFiles/PleaseWork.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PleaseWork.dir/main.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/salmannavroz/PleaseWork/main.cpp > CMakeFiles/PleaseWork.dir/main.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/hritikbharucha/Desktop/C++/PleaseWork/main.cpp > CMakeFiles/PleaseWork.dir/main.cpp.i
 
 CMakeFiles/PleaseWork.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PleaseWork.dir/main.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/salmannavroz/PleaseWork/main.cpp -o CMakeFiles/PleaseWork.dir/main.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/hritikbharucha/Desktop/C++/PleaseWork/main.cpp -o CMakeFiles/PleaseWork.dir/main.cpp.s
 
 # Object files for target PleaseWork
 PleaseWork_OBJECTS = \
@@ -110,11 +110,11 @@ PleaseWork: CMakeFiles/PleaseWork.dir/main.cpp.o
 PleaseWork: CMakeFiles/PleaseWork.dir/build.make
 PleaseWork: /usr/local/lib/libmongocxx.3.7.0.dylib
 PleaseWork: /usr/local/lib/libbsoncxx.3.7.0.dylib
-PleaseWork: /Users/salmannavroz/Qt/QtDesignStudio/qt6_design_studio_reduced_version/lib/QtWidgets.framework/Versions/A/QtWidgets
-PleaseWork: /Users/salmannavroz/Qt/QtDesignStudio/qt6_design_studio_reduced_version/lib/QtGui.framework/Versions/A/QtGui
-PleaseWork: /Users/salmannavroz/Qt/QtDesignStudio/qt6_design_studio_reduced_version/lib/QtCore.framework/Versions/A/QtCore
+PleaseWork: /Users/hritikbharucha/Qt/6.4.0/macos/lib/QtWidgets.framework/Versions/A/QtWidgets
+PleaseWork: /Users/hritikbharucha/Qt/6.4.0/macos/lib/QtGui.framework/Versions/A/QtGui
+PleaseWork: /Users/hritikbharucha/Qt/6.4.0/macos/lib/QtCore.framework/Versions/A/QtCore
 PleaseWork: CMakeFiles/PleaseWork.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/salmannavroz/PleaseWork/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable PleaseWork"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/hritikbharucha/Desktop/C++/PleaseWork/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable PleaseWork"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/PleaseWork.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -126,6 +126,6 @@ CMakeFiles/PleaseWork.dir/clean:
 .PHONY : CMakeFiles/PleaseWork.dir/clean
 
 CMakeFiles/PleaseWork.dir/depend:
-	cd /Users/salmannavroz/PleaseWork/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/salmannavroz/PleaseWork /Users/salmannavroz/PleaseWork /Users/salmannavroz/PleaseWork/build /Users/salmannavroz/PleaseWork/build /Users/salmannavroz/PleaseWork/build/CMakeFiles/PleaseWork.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/hritikbharucha/Desktop/C++/PleaseWork/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/hritikbharucha/Desktop/C++/PleaseWork /Users/hritikbharucha/Desktop/C++/PleaseWork /Users/hritikbharucha/Desktop/C++/PleaseWork/build /Users/hritikbharucha/Desktop/C++/PleaseWork/build /Users/hritikbharucha/Desktop/C++/PleaseWork/build/CMakeFiles/PleaseWork.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/PleaseWork.dir/depend
 
