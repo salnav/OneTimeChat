@@ -1,6 +1,8 @@
 #include <cstdint>
 #include <iostream>
 #include <vector>
+#include <thread>
+#include <dispatch/dispatch.h>
 #include <bsoncxx/json.hpp>
 #include <mongocxx/client.hpp>
 #include <mongocxx/stdx.hpp>
@@ -10,6 +12,7 @@
 #include <bsoncxx/builder/stream/helpers.hpp>
 #include <bsoncxx/builder/stream/document.hpp>
 #include <bsoncxx/builder/stream/array.hpp>
+#include <bsoncxx/exception/error_code.hpp>
 #include <QApplication>
 #include <QVBoxLayout>
 #include <QHBoxLayout>
@@ -17,6 +20,7 @@
 #include <QTextEdit>
 #include <QPushButton>
 #include <QLabel>
+#include <QMessageBox>
 #include <cstdlib> // for rand() and srand()
 #include <ctime> // for time()
 #include <random>
@@ -31,6 +35,12 @@ using bsoncxx::builder::stream::open_array;
 using bsoncxx::builder::stream::open_document;
 
 using namespace std;
+mongocxx::instance inst{};
+const auto uri = mongocxx::uri{"mongodb+srv://testableBoys:ABC@cluster0.oe7ufff.mongodb.net/?retryWrites=true&w=majority"};
+mongocxx::database db;
+mongocxx::collection coll;
+// mongocxx::change_stream stream;
+int user = 0;
 
 std::string turnQueryResultIntoString(bsoncxx::document::element queryResult) {
 
@@ -51,29 +61,30 @@ std::string turnQueryResultIntoString(bsoncxx::document::element queryResult) {
     return backPartRemoved;
 }
 
-std::string searchCollection(mongocxx::collection& coll, std::string field) {
+
+void searchCollection(mongocxx::collection& coll, std::string field) {
     bsoncxx::stdx::optional<bsoncxx::document::value> result = coll.find_one({});
     if (result) {
         bsoncxx::document::element value = (*result)[field];
         cout << turnQueryResultIntoString(value) << endl;
-        return turnQueryResultIntoString(value);
+        std::cout << turnQueryResultIntoString(value) << std::endl;
     }
-    return "";
+    
 }
 
-void updateCollection(mongocxx::collection& coll, std::string field) {
-    int users = std::stoi(searchCollection(coll, field)); 
+// void updateCollection(mongocxx::collection& coll, std::string field) {
+//     int users = std::stoi(searchCollection(coll, field)); 
 
-    if (users == 0) {
-        cout << "NO USERS";
-    }
+//     if (users == 0) {
+//         cout << "NO USERS";
+//     }
 
-    // coll.update_one(document{} << "users" << 10 << finalize,
-    //                   document{} << "$set" << open_document <<
-    //                     "i" << 110 << close_document << finalize);
-}
+//     // coll.update_one(document{} << "users" << 10 << finalize,
+//     //                   document{} << "$set" << open_document <<
+//     //                     "i" << 110 << close_document << finalize);
+// }
 
-void showChatWindow(mongocxx::collection& coll) {
+void showChatWindow() {
     QWidget *window = new QWidget;
     window->resize(800, 600);
     window->setMaximumSize(window->size());
@@ -93,29 +104,58 @@ void showChatWindow(mongocxx::collection& coll) {
     window->setLayout(layout);
     window->show();
 
-    QObject::connect(sendButton, &QPushButton::clicked, [inputText, chatText](){
+    QObject::connect(sendButton, &QPushButton::clicked, [inputText](){
         QString message = inputText->text();
         QString username = "You: ";
         if(!message.isEmpty()){
+            bsoncxx::document::value message_info = bsoncxx::builder::stream::document{} << "user" << user << "message" << message.toStdString() << bsoncxx::builder::stream::finalize;
+            bsoncxx::document::view message_info_view = message_info.view();
+            coll.update_one({}, document{} << "$push" << open_document << "messages" << message_info_view << close_document << finalize);
 
-            chatText->append("<b>" + username + "</b>" + message);
-            chatText->setAlignment(Qt::AlignRight);
-            inputText->clear();
+            // chatText->append("<b>" + username + "</b>" + message);
+            // chatText->setAlignment(Qt::AlignRight);
+            // inputText->clear();
         }
+    //     bsoncxx::document::value message_info = bsoncxx::builder::stream::document{} << "from" << 0 << "message" << "Hello?" << bsoncxx::builder::stream::finalize;
+    //    bsoncxx::document::view message_info_view = message_info.view();
+    //    coll.update_one({}, document{} << "$push" << open_document << "messages" << message_info_view << close_document << finalize);
+
     });
 
-    QPushButton *receiveButton = new QPushButton("Receive");
-    inputLayout->addWidget(receiveButton);
+    // QPushButton *receiveButton = new QPushButton("Receive");
+    // inputLayout->addWidget(receiveButton);
 
-    QObject::connect(receiveButton, &QPushButton::clicked, [chatText](){
-        QString message = "Hello, how are you?";
-        QString username = "Friend: ";
+    // QObject::connect(receiveButton, &QPushButton::clicked, [chatText](){
+    //     QString message = "Hello, how are you?";
+    //     QString username = "Friend: ";
 
-        chatText->append("<b>" + username + "</b>" + message);
-        chatText->setAlignment(Qt::AlignLeft);
-    });
+    //     chatText->append("<b>" + username + "</b>" + message);
+    //     chatText->setAlignment(Qt::AlignLeft);
+    // });
+       std::thread watch_thread([]() {
+     mongocxx::options::change_stream options;
+    // Wait up to 1 second before polling again.
+    const std::chrono::milliseconds await_time{1000};
+    options.max_await_time(await_time);
+    const auto end = std::chrono::system_clock::now() + std::chrono::seconds{300};
+    mongocxx::change_stream stream = coll.watch(options);
+     
+    
+    
+    while (std::chrono::system_clock::now() < end) {
+            for (const auto& event : stream) {
+                std::cout << bsoncxx::to_json(event) << std::endl;
+                // auto update_description = event["updateDescription"];
+                // auto updated_fields = update_description["updatedFields"];
 
-    searchCollection(coll, "users");
+    }
+    }});
+
+    watch_thread.detach();
+
+
+
+    
 }
 
 std::string generateRandomCode() {
@@ -129,6 +169,10 @@ std::string generateRandomCode() {
         code << randomDigit;
     }
     return code.str();
+}
+
+void pizza() {
+    std::cout << "Chicken";
 }
 
 void showEnterCodeWindow() {
@@ -161,6 +205,34 @@ void showEnterCodeWindow() {
     startChatButton->setStyleSheet("background-color: #f0f0f0; border-radius: 10px; color: black");
     layout->addWidget(startChatButton);
 
+    QObject::connect(startChatButton, &QPushButton::clicked, [codeTextbox,window](){
+        QString codeText = codeTextbox->text();
+        std::string code = codeText.toStdString();
+        coll = db[code];
+        auto result = coll.update_one(document{} << "secured" << false << finalize,
+                      document{} << "$set" << open_document <<
+                        "secured" << true << close_document << finalize);
+                        if (result) {
+        if (result->modified_count() == 1) {
+            std::cout << "SUCCESSFUL" << std::endl;
+            user = 1;
+            showChatWindow();
+            // The update was successful
+            // call the desired functions here
+        } else {
+            std::cout << "FAILED" << std::endl;
+            QMessageBox::warning( 
+            window, 
+            "OneTimeChat", 
+            "Code Invalid Or In Use Already" );
+        }
+        } else {
+        // An error occurred while executing the update, check the exception that was thrown.
+        }
+        });
+        
+
+    
     // Set the layout for the widget
     window->setLayout(layout);
 
@@ -169,38 +241,31 @@ void showEnterCodeWindow() {
 }
 
 void showCodeWindow() {
+    std::cout << "pizza" << std::endl;
     // Create a new widget
     QWidget* window = new QWidget;
     window->setWindowTitle("Chat Code");
     window->setFixedSize(400, 300); // set the size of the window to 400x200
 
-    // Create a vertical layout
+    // // Create a vertical layout
     QVBoxLayout* layout = new QVBoxLayout;
 
-    // Create a horizontal layout
+    // // Create a horizontal layout
     QHBoxLayout* hLayout = new QHBoxLayout;
 
-    // Create a label for the "Chat code:" text
+    // // Create a label for the "Chat code:" text
     QLabel* chatCodeLabel = new QLabel("Chat code: ");
     hLayout->addWidget(chatCodeLabel);
 
-    std::string code = generateRandomCode();
+    std::string code =  generateRandomCode();
+    
+    // bsoncxx::document::value doc = bsoncxx::builder::stream::document{} << "users" << 0 
+    // << bsoncxx::builder::stream::finalize;
+    // coll.insert_one(doc.view());
 
-    mongocxx::instance inst{};
-    const auto uri = mongocxx::uri{"mongodb+srv://testableBoys:ABC@cluster0.oe7ufff.mongodb.net/?retryWrites=true&w=majority"};
-    mongocxx::options::client client_options;
-    auto api = mongocxx::options::server_api(mongocxx::options::server_api::version::k_version_1);
-    client_options.server_api_opts (api);
-    mongocxx::client conn{uri, client_options};
-    mongocxx::database db = conn["Chats"];
-    mongocxx::collection coll = db[code];
-    bsoncxx::document::value doc = bsoncxx::builder::stream::document{} << "users" << 0 
-    << bsoncxx::builder::stream::finalize;
-    coll.insert_one(doc.view());
+    // // auto value = searchCollection(coll, "users");
 
-    auto value = searchCollection(coll, "users");
-
-    // Create the selectable label
+    // // Create the selectable label
     QLabel* selectableLabel = new QLabel(QString::fromStdString(code));
     selectableLabel->setTextInteractionFlags(Qt::TextSelectableByMouse);
     selectableLabel->setAutoFillBackground(false);
@@ -208,20 +273,70 @@ void showCodeWindow() {
     selectableLabel->setFixedSize(100,30);
     hLayout->addWidget(selectableLabel);
 
-    // Add the horizontal layout to the vertical layout
+    // // Add the horizontal layout to the vertical layout
     layout->addLayout(hLayout);
 
-    // Create the "Start Chatting" button
+    // // Create the "Start Chatting" button
     QPushButton* startChattingButton = new QPushButton("Start Chatting");
     startChattingButton->setFixedSize(QSize(100, 40));
     startChattingButton->setStyleSheet("background-color: #f0f0f0; border-radius: 10px; color: black");
+    coll = db[code];
+    bsoncxx::document::value doc = bsoncxx::builder::stream::document{} << "secured" << false << "messages" << bsoncxx::builder::stream::open_array << bsoncxx::builder::stream::close_array << bsoncxx::builder::stream::finalize;
+    coll.insert_one(doc.view());
+ 
+    // QObject::connect(startChattingButton, &QPushButton::clicked, [](){
+       
+    //     // coll.update_one(document{} << "secured" << false << finalize,
+    //     //               document{} << "$set" << open_document <<
+    //     //                 "secured" << true << close_document << finalize);
+    // });
 
-    searchCollection(coll, "users");
-    QObject::connect(startChattingButton, &QPushButton::clicked, [coll](){
-        mongocxx::collection coll2 = coll;
-        searchCollection(coll2,"users");
-        // showChatWindow(coll2);
+           
+        // showChatWindow();
+            // document inserted successfully, continue with your code
+   
+    std::thread watch_thread([]() {
+     mongocxx::options::change_stream options;
+    // Wait up to 1 second before polling again.
+    bool secured_flag = false;
+    const std::chrono::milliseconds await_time{1000};
+    options.max_await_time(await_time);
+    const auto end = std::chrono::system_clock::now() + std::chrono::seconds{300};
+    mongocxx::change_stream stream = coll.watch(options);
+     
+    
+    
+    while (std::chrono::system_clock::now() < end) {
+            for (const auto& event : stream) {
+                std::cout << bsoncxx::to_json(event) << std::endl;
+                auto update_description = event["updateDescription"];
+                auto updated_fields = update_description["updatedFields"];
+                auto secured = updated_fields["secured"].get_bool();
+                if (secured) {
+                    secured_flag = true;
+                    dispatch_async(dispatch_get_main_queue(), ^{
+                // update the window's drag regions here
+                user = 0;
+                showChatWindow();
+                });
+
+                    break;
+                    std::cout << "secured field is true" << std::endl;
+                } else {
+                    std::cout << "secured field is false" << std::endl;
+                }
+    
+                if (std::chrono::system_clock::now() >= end)
+                    break;
+            }
+            if(secured_flag) {
+                break;
+            }
+    }
     });
+    watch_thread.detach();
+    std::cout << "pizza2" << std::endl;
+
 
     QVBoxLayout* btnLayout = new QVBoxLayout;
     btnLayout->addWidget(startChattingButton);
@@ -236,6 +351,7 @@ void showCodeWindow() {
 
     // Show the widget
     window->show();
+   
 }
 
 void showWelcomeWindow() {
@@ -260,7 +376,7 @@ void showWelcomeWindow() {
     newChatButton->setStyleSheet("background-color: #f0f0f0; border-radius: 10px; color: black"); // Add a background color and rounded corners
 
     QObject::connect(newChatButton, &QPushButton::clicked, [&](){
-        window->hide();
+        // window->hide();
         showCodeWindow();
     });
 
@@ -269,8 +385,8 @@ void showWelcomeWindow() {
     enterCodeButton->setFixedSize(QSize(100, 40)); // make the button smaller
     enterCodeButton->setStyleSheet("background-color: #f0f0f0; border-radius: 10px; color: black"); // Add a background color and rounded corners
    
-    QObject::connect(enterCodeButton, &QPushButton::clicked, [&](){
-        window->hide();
+    QObject::connect(enterCodeButton, &QPushButton::clicked, [](){
+        // window->hide();
         showEnterCodeWindow();
     });
 
@@ -294,7 +410,12 @@ void showWelcomeWindow() {
 
 int main(int argc, char *argv[]) {
     QApplication a(argc, argv);
-
+    mongocxx::options::client client_options;
+    auto api = mongocxx::options::server_api(mongocxx::options::server_api::version::k_version_1);
+    client_options.server_api_opts (api);
+    mongocxx::client conn{uri, client_options};
+    db = conn["Chats"];
+    
     showWelcomeWindow();
 
     return a.exec();
