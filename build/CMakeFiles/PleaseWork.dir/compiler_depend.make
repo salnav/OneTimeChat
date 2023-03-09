@@ -419,6 +419,58 @@ CMakeFiles/PleaseWork.dir/main.cpp.o: /Users/hritikbharucha/Desktop/C++/PleaseWo
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__bsd_locale_defaults.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/vector \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__split_buffer \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/thread \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/dispatch/dispatch.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/os/availability.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/TargetConditionals.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/os/base.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/stdbool.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/14.0.0/include/stdbool.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/unistd.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/unistd.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_posix_vdisable.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_seek_set.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/select.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_select.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_uuid_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/gethostuuid.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/fcntl.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/fcntl.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_o_sync.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_o_dsync.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_s_ifmt.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_filesec_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/os/object.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/os/workgroup.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/os/workgroup_base.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/mach/port.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/mach/boolean.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/mach/machine/boolean.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/mach/i386/boolean.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/mach/machine/vm_types.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/mach/i386/vm_types.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/os/clock.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/os/workgroup_object.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/os/workgroup_interval.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/os/workgroup_parallel.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/dispatch/base.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/dispatch/time.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/mach/clock_types.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/mach/time_value.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/dispatch/object.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/dispatch/queue.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/dispatch/block.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/dispatch/source.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/mach/message.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/mach/kern_return.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/mach/machine/kern_return.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/mach/i386/kern_return.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/dispatch/group.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/dispatch/semaphore.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/dispatch/once.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/dispatch/data.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/dispatch/io.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/dispatch/workloop.h \
   /usr/local/include/bsoncxx/v_noabi/bsoncxx/json.hpp \
   /usr/local/include/bsoncxx/v_noabi/bsoncxx/document/value.hpp \
   /usr/local/include/bsoncxx/v_noabi/bsoncxx/array/view.hpp \
@@ -561,19 +613,17 @@ CMakeFiles/PleaseWork.dir/main.cpp.o: /Users/hritikbharucha/Desktop/C++/PleaseWo
   /usr/local/include/bsoncxx/v_noabi/bsoncxx/builder/stream/array_context.hpp \
   /usr/local/include/bsoncxx/v_noabi/bsoncxx/builder/stream/single_context.hpp \
   /usr/local/include/bsoncxx/v_noabi/bsoncxx/builder/stream/array.hpp \
+  /usr/local/include/bsoncxx/v_noabi/bsoncxx/exception/error_code.hpp \
   /Users/hritikbharucha/Qt/6.4.0/macos/lib/QtWidgets.framework/Headers/QApplication \
   /Users/hritikbharucha/Qt/6.4.0/macos/lib/QtWidgets.framework/Headers/qapplication.h \
   /Users/hritikbharucha/Qt/6.4.0/macos/lib/QtWidgets.framework/Headers/qtwidgetsglobal.h \
   /Users/hritikbharucha/Qt/6.4.0/macos/lib/QtGui.framework/Headers/qtguiglobal.h \
   /Users/hritikbharucha/Qt/6.4.0/macos/lib/QtCore.framework/Headers/qglobal.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/stdbool.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/14.0.0/include/stdbool.h \
   /Users/hritikbharucha/Qt/6.4.0/macos/lib/QtCore.framework/Headers/qconfig.h \
   /Users/hritikbharucha/Qt/6.4.0/macos/lib/QtCore.framework/Headers/qtcore-config.h \
   /Users/hritikbharucha/Qt/6.4.0/macos/lib/QtCore.framework/Headers/qtconfigmacros.h \
   /Users/hritikbharucha/Qt/6.4.0/macos/lib/QtCore.framework/Headers/qtcoreexports.h \
   /Users/hritikbharucha/Qt/6.4.0/macos/lib/QtCore.framework/Headers/qsystemdetection.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/TargetConditionals.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/AvailabilityMacros.h \
   /Users/hritikbharucha/Qt/6.4.0/macos/lib/QtCore.framework/Headers/qprocessordetection.h \
   /Users/hritikbharucha/Qt/6.4.0/macos/lib/QtCore.framework/Headers/qcompilerdetection.h \
@@ -719,11 +769,20 @@ CMakeFiles/PleaseWork.dir/main.cpp.o: /Users/hritikbharucha/Desktop/C++/PleaseWo
   /Users/hritikbharucha/Qt/6.4.0/macos/lib/QtWidgets.framework/Headers/qlabel.h \
   /Users/hritikbharucha/Qt/6.4.0/macos/lib/QtGui.framework/Headers/qpicture.h \
   /Users/hritikbharucha/Qt/6.4.0/macos/lib/QtCore.framework/Headers/qiodevice.h \
+  /Users/hritikbharucha/Qt/6.4.0/macos/lib/QtWidgets.framework/Headers/QMessageBox \
+  /Users/hritikbharucha/Qt/6.4.0/macos/lib/QtWidgets.framework/Headers/qmessagebox.h \
+  /Users/hritikbharucha/Qt/6.4.0/macos/lib/QtWidgets.framework/Headers/qdialog.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/random \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/sstream
 
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/random:
+
+/Users/hritikbharucha/Qt/6.4.0/macos/lib/QtWidgets.framework/Headers/qdialog.h:
+
+/Users/hritikbharucha/Qt/6.4.0/macos/lib/QtWidgets.framework/Headers/qmessagebox.h:
+
+/Users/hritikbharucha/Qt/6.4.0/macos/lib/QtWidgets.framework/Headers/QMessageBox:
 
 /Users/hritikbharucha/Qt/6.4.0/macos/lib/QtWidgets.framework/Headers/qlabel.h:
 
@@ -751,8 +810,6 @@ CMakeFiles/PleaseWork.dir/main.cpp.o: /Users/hritikbharucha/Desktop/C++/PleaseWo
 
 /Users/hritikbharucha/Qt/6.4.0/macos/lib/QtWidgets.framework/Headers/qgridlayout.h:
 
-/Users/hritikbharucha/Qt/6.4.0/macos/lib/QtWidgets.framework/Headers/QVBoxLayout:
-
 /Users/hritikbharucha/Qt/6.4.0/macos/lib/QtGui.framework/Headers/qinputmethod.h:
 
 /Users/hritikbharucha/Qt/6.4.0/macos/lib/QtGui.framework/Headers/qguiapplication.h:
@@ -766,8 +823,6 @@ CMakeFiles/PleaseWork.dir/main.cpp.o: /Users/hritikbharucha/Desktop/C++/PleaseWo
 /Users/hritikbharucha/Qt/6.4.0/macos/lib/QtGui.framework/Headers/qrgba64.h:
 
 /Users/hritikbharucha/Qt/6.4.0/macos/lib/QtCore.framework/Headers/qcoreapplication_platform.h:
-
-/Users/hritikbharucha/Qt/6.4.0/macos/lib/QtCore.framework/Headers/qshareddata_impl.h:
 
 /Users/hritikbharucha/Qt/6.4.0/macos/lib/QtCore.framework/Headers/qsharedpointer_impl.h:
 
@@ -818,10 +873,6 @@ CMakeFiles/PleaseWork.dir/main.cpp.o: /Users/hritikbharucha/Desktop/C++/PleaseWo
 /Users/hritikbharucha/Qt/6.4.0/macos/lib/QtCore.framework/Headers/qobject_impl.h:
 
 /Users/hritikbharucha/Qt/6.4.0/macos/lib/QtCore.framework/Headers/qarraydatapointer.h:
-
-/Users/hritikbharucha/Qt/6.4.0/macos/lib/QtCore.framework/Headers/qstringlist.h:
-
-/Users/hritikbharucha/Qt/6.4.0/macos/lib/QtCore.framework/Headers/qtmetamacros.h:
 
 /Users/hritikbharucha/Qt/6.4.0/macos/lib/QtCore.framework/Headers/qrefcount.h:
 
@@ -893,17 +944,7 @@ CMakeFiles/PleaseWork.dir/main.cpp.o: /Users/hritikbharucha/Desktop/C++/PleaseWo
 
 /usr/local/include/mongocxx/v_noabi/mongocxx/options/tls.hpp:
 
-/Users/hritikbharucha/Qt/6.4.0/macos/lib/QtGui.framework/Headers/qfont.h:
-
-/usr/local/include/mongocxx/v_noabi/mongocxx/events/topology_opening_event.hpp:
-
-/usr/local/include/mongocxx/v_noabi/mongocxx/events/topology_description.hpp:
-
 /usr/local/include/mongocxx/v_noabi/mongocxx/events/server_closed_event.hpp:
-
-/usr/local/include/mongocxx/v_noabi/mongocxx/events/server_description.hpp:
-
-/usr/local/include/mongocxx/v_noabi/mongocxx/events/server_changed_event.hpp:
 
 /usr/local/include/bsoncxx/v_noabi/bsoncxx/builder/stream/helpers.hpp:
 
@@ -935,10 +976,6 @@ CMakeFiles/PleaseWork.dir/main.cpp.o: /Users/hritikbharucha/Desktop/C++/PleaseWo
 
 /usr/local/include/mongocxx/v_noabi/mongocxx/options/count.hpp:
 
-/Users/hritikbharucha/Qt/6.4.0/macos/lib/QtCore.framework/Headers/qsize.h:
-
-/usr/local/include/mongocxx/v_noabi/mongocxx/options/change_stream.hpp:
-
 /usr/local/include/mongocxx/v_noabi/mongocxx/read_preference.hpp:
 
 /usr/local/include/mongocxx/v_noabi/mongocxx/options/aggregate.hpp:
@@ -952,8 +989,6 @@ CMakeFiles/PleaseWork.dir/main.cpp.o: /Users/hritikbharucha/Desktop/C++/PleaseWo
 /usr/local/include/mongocxx/v_noabi/mongocxx/options/delete.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__functional/is_transparent.h:
-
-/usr/local/include/mongocxx/v_noabi/mongocxx/write_concern.hpp:
 
 /usr/local/include/bsoncxx/v_noabi/bsoncxx/third_party/mnmlstc/core/memory.hpp:
 
@@ -981,10 +1016,6 @@ CMakeFiles/PleaseWork.dir/main.cpp.o: /Users/hritikbharucha/Desktop/C++/PleaseWo
 
 /usr/local/include/mongocxx/v_noabi/mongocxx/model/delete_many.hpp:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/TargetConditionals.h:
-
-/usr/local/include/mongocxx/v_noabi/mongocxx/model/write.hpp:
-
 /usr/local/include/mongocxx/v_noabi/mongocxx/bulk_write.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/sstream:
@@ -1006,8 +1037,6 @@ CMakeFiles/PleaseWork.dir/main.cpp.o: /Users/hritikbharucha/Desktop/C++/PleaseWo
 /usr/local/include/bsoncxx/v_noabi/bsoncxx/builder/basic/helpers.hpp:
 
 /usr/local/include/bsoncxx/v_noabi/bsoncxx/builder/basic/sub_array.hpp:
-
-/usr/local/include/bsoncxx/v_noabi/bsoncxx/builder/basic/impl.hpp:
 
 /usr/local/include/bsoncxx/v_noabi/bsoncxx/builder/basic/array.hpp:
 
@@ -1052,6 +1081,88 @@ CMakeFiles/PleaseWork.dir/main.cpp.o: /Users/hritikbharucha/Desktop/C++/PleaseWo
 /usr/local/include/bsoncxx/v_noabi/bsoncxx/config/prelude.hpp:
 
 /usr/local/include/bsoncxx/v_noabi/bsoncxx/array/view.hpp:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/dispatch/semaphore.h:
+
+/Users/hritikbharucha/Qt/6.4.0/macos/lib/QtWidgets.framework/Headers/QVBoxLayout:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/dispatch/group.h:
+
+/usr/local/include/mongocxx/v_noabi/mongocxx/events/server_description.hpp:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/mach/machine/kern_return.h:
+
+/Users/hritikbharucha/Qt/6.4.0/macos/lib/QtCore.framework/Headers/qstringlist.h:
+
+/Users/hritikbharucha/Qt/6.4.0/macos/lib/QtCore.framework/Headers/qtmetamacros.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/mach/kern_return.h:
+
+/Users/hritikbharucha/Qt/6.4.0/macos/lib/QtCore.framework/Headers/qsize.h:
+
+/usr/local/include/mongocxx/v_noabi/mongocxx/options/change_stream.hpp:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/mach/message.h:
+
+/usr/local/include/bsoncxx/v_noabi/bsoncxx/builder/basic/impl.hpp:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/dispatch/source.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/dispatch/queue.h:
+
+/Users/hritikbharucha/Qt/6.4.0/macos/lib/QtGui.framework/Headers/qfont.h:
+
+/usr/local/include/mongocxx/v_noabi/mongocxx/events/topology_opening_event.hpp:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/mach/clock_types.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/dispatch/base.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/os/workgroup_parallel.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/os/workgroup_object.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/mach/i386/vm_types.h:
+
+/Users/hritikbharucha/Qt/6.4.0/macos/lib/QtCore.framework/Headers/qshareddata_impl.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/mach/boolean.h:
+
+/usr/local/include/mongocxx/v_noabi/mongocxx/write_concern.hpp:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/os/workgroup_base.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/os/workgroup.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_filesec_t.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_uuid_t.h:
+
+/usr/local/include/mongocxx/v_noabi/mongocxx/events/topology_description.hpp:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_select.h:
+
+/usr/local/include/bsoncxx/v_noabi/bsoncxx/exception/error_code.hpp:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/select.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_seek_set.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/dispatch/data.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/unistd.h:
+
+/usr/local/include/mongocxx/v_noabi/mongocxx/model/write.hpp:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/mach/machine/boolean.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/TargetConditionals.h:
+
+/usr/local/include/mongocxx/v_noabi/mongocxx/events/server_changed_event.hpp:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/dispatch/dispatch.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/thread:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__split_buffer:
 
@@ -1123,6 +1234,8 @@ CMakeFiles/PleaseWork.dir/main.cpp.o: /Users/hritikbharucha/Desktop/C++/PleaseWo
 
 /usr/local/include/mongocxx/v_noabi/mongocxx/result/update.hpp:
 
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_posix_vdisable.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/xlocale/_stdio.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/_xlocale.h:
@@ -1142,6 +1255,8 @@ CMakeFiles/PleaseWork.dir/main.cpp.o: /Users/hritikbharucha/Desktop/C++/PleaseWo
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/wctype.h:
 
 /Users/hritikbharucha/Qt/6.4.0/macos/lib/QtWidgets.framework/Headers/qpushbutton.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/dispatch/once.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_ino_t.h:
 
@@ -1209,6 +1324,8 @@ CMakeFiles/PleaseWork.dir/main.cpp.o: /Users/hritikbharucha/Desktop/C++/PleaseWo
 
 /Users/hritikbharucha/Qt/6.4.0/macos/lib/QtCore.framework/Headers/qdatastream.h:
 
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_o_dsync.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/locale.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/stable_sort.h:
@@ -1243,6 +1360,8 @@ CMakeFiles/PleaseWork.dir/main.cpp.o: /Users/hritikbharucha/Desktop/C++/PleaseWo
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/max_element.h:
 
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/dispatch/block.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/sift_down.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/wctype.h:
@@ -1268,6 +1387,8 @@ CMakeFiles/PleaseWork.dir/main.cpp.o: /Users/hritikbharucha/Desktop/C++/PleaseWo
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/find_if_not.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/find_if.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/os/base.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/find_end.h:
 
@@ -1331,6 +1452,8 @@ CMakeFiles/PleaseWork.dir/main.cpp.o: /Users/hritikbharucha/Desktop/C++/PleaseWo
 
 /Users/hritikbharucha/Qt/6.4.0/macos/lib/QtGui.framework/Headers/qtguiexports.h:
 
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/os/clock.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/count_if.h:
 
 /Users/hritikbharucha/Qt/6.4.0/macos/lib/QtGui.framework/Headers/qtextdocument.h:
@@ -1348,6 +1471,8 @@ CMakeFiles/PleaseWork.dir/main.cpp.o: /Users/hritikbharucha/Desktop/C++/PleaseWo
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__memory/temporary_buffer.h:
 
 /usr/local/include/mongocxx/v_noabi/mongocxx/options/index.hpp:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/os/availability.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__iterator/reverse_iterator.h:
 
@@ -1409,6 +1534,8 @@ CMakeFiles/PleaseWork.dir/main.cpp.o: /Users/hritikbharucha/Desktop/C++/PleaseWo
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/min.h:
 
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/dispatch/time.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__iterator/distance.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__iterator/default_sentinel.h:
@@ -1432,6 +1559,8 @@ CMakeFiles/PleaseWork.dir/main.cpp.o: /Users/hritikbharucha/Desktop/C++/PleaseWo
 /Users/hritikbharucha/Qt/6.4.0/macos/lib/QtCore.framework/Headers/qmargins.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/remove.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/fcntl.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/copy_if.h:
 
@@ -1474,6 +1603,8 @@ CMakeFiles/PleaseWork.dir/main.cpp.o: /Users/hritikbharucha/Desktop/C++/PleaseWo
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_pthread/_pthread_mutex_t.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/search_n.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_o_sync.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_pthread/_pthread_condattr_t.h:
 
@@ -1561,17 +1692,23 @@ CMakeFiles/PleaseWork.dir/main.cpp.o: /Users/hritikbharucha/Desktop/C++/PleaseWo
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/sort.h:
 
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_s_ifmt.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__functional/function.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__functional/bind.h:
 
 /Users/hritikbharucha/Qt/6.4.0/macos/lib/QtCore.framework/Headers/qvariant.h:
 
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/mach/time_value.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/_types/_uint64_t.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/i386/limits.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/comp.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/os/object.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/iter_swap.h:
 
@@ -1580,6 +1717,8 @@ CMakeFiles/PleaseWork.dir/main.cpp.o: /Users/hritikbharucha/Desktop/C++/PleaseWo
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/search.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/strings.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/mach/port.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/_stdio.h:
 
@@ -1590,6 +1729,8 @@ CMakeFiles/PleaseWork.dir/main.cpp.o: /Users/hritikbharucha/Desktop/C++/PleaseWo
 /usr/local/include/mongocxx/v_noabi/mongocxx/config/compiler.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__bits:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/mach/i386/boolean.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/minmax_element.h:
 
@@ -1626,6 +1767,8 @@ CMakeFiles/PleaseWork.dir/main.cpp.o: /Users/hritikbharucha/Desktop/C++/PleaseWo
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__iterator/readable_traits.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__iterator/iterator_traits.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/os/workgroup_interval.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types.h:
 
@@ -1711,6 +1854,8 @@ CMakeFiles/PleaseWork.dir/main.cpp.o: /Users/hritikbharucha/Desktop/C++/PleaseWo
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/resource.h:
 
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/fcntl.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/includes.h:
 
 /Users/hritikbharucha/Qt/6.4.0/macos/lib/QtWidgets.framework/Headers/qsizepolicy.h:
@@ -1779,9 +1924,9 @@ CMakeFiles/PleaseWork.dir/main.cpp.o: /Users/hritikbharucha/Desktop/C++/PleaseWo
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/pthread/pthread_impl.h:
 
-/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/stdbool.h:
-
 /usr/local/include/bsoncxx/v_noabi/bsoncxx/stdx/string_view.hpp:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/stdbool.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__iterator/wrap_iter.h:
 
@@ -1812,6 +1957,8 @@ CMakeFiles/PleaseWork.dir/main.cpp.o: /Users/hritikbharucha/Desktop/C++/PleaseWo
 /Users/hritikbharucha/Qt/6.4.0/macos/lib/QtCore.framework/Headers/qprocessordetection.h:
 
 /Users/hritikbharucha/Qt/6.4.0/macos/lib/QtWidgets.framework/Headers/qtwidgetsglobal.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/dispatch/io.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/partition.h:
 
@@ -1866,6 +2013,8 @@ CMakeFiles/PleaseWork.dir/main.cpp.o: /Users/hritikbharucha/Desktop/C++/PleaseWo
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/comp_ref_type.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/_types/_wctype_t.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/dispatch/object.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_wint_t.h:
 
@@ -1937,6 +2086,8 @@ CMakeFiles/PleaseWork.dir/main.cpp.o: /Users/hritikbharucha/Desktop/C++/PleaseWo
 
 PleaseWork_autogen/mocs_compilation.cpp:
 
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/gethostuuid.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_rune_t.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/limits.h:
@@ -1995,6 +2146,8 @@ PleaseWork_autogen/mocs_compilation.cpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/replace.h:
 
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/dispatch/workloop.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__ranges/enable_borrowed_range.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/array:
@@ -2020,6 +2173,8 @@ PleaseWork_autogen/mocs_compilation.cpp:
 /usr/local/include/mongocxx/v_noabi/mongocxx/pipeline.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_ct_rune_t.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/unistd.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_intptr_t.h:
 
@@ -2093,6 +2248,8 @@ PleaseWork_autogen/mocs_compilation.cpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__functional/bind_front.h:
 
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/mach/machine/vm_types.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__config:
 
 /Library/Developer/CommandLineTools/usr/lib/clang/14.0.0/include/stdint.h:
@@ -2138,6 +2295,8 @@ PleaseWork_autogen/mocs_compilation.cpp:
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_mbstate_t.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/cdefs.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/mach/i386/kern_return.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_suseconds_t.h:
 

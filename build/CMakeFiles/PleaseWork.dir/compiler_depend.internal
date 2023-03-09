@@ -421,6 +421,58 @@ CMakeFiles/PleaseWork.dir/main.cpp.o
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__bsd_locale_defaults.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/vector
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__split_buffer
+ /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/thread
+ /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/dispatch/dispatch.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/os/availability.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/TargetConditionals.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/os/base.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/stdbool.h
+ /Library/Developer/CommandLineTools/usr/lib/clang/14.0.0/include/stdbool.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/unistd.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/unistd.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_posix_vdisable.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_seek_set.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/select.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_select.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_uuid_t.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/gethostuuid.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/fcntl.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/fcntl.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_o_sync.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_o_dsync.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_s_ifmt.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_filesec_t.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/os/object.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/os/workgroup.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/os/workgroup_base.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/mach/port.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/mach/boolean.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/mach/machine/boolean.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/mach/i386/boolean.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/mach/machine/vm_types.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/mach/i386/vm_types.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/os/clock.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/os/workgroup_object.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/os/workgroup_interval.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/os/workgroup_parallel.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/dispatch/base.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/dispatch/time.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/mach/clock_types.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/mach/time_value.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/dispatch/object.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/dispatch/queue.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/dispatch/block.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/dispatch/source.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/mach/message.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/mach/kern_return.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/mach/machine/kern_return.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/mach/i386/kern_return.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/dispatch/group.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/dispatch/semaphore.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/dispatch/once.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/dispatch/data.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/dispatch/io.h
+ /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/dispatch/workloop.h
  /usr/local/include/bsoncxx/v_noabi/bsoncxx/json.hpp
  /usr/local/include/bsoncxx/v_noabi/bsoncxx/document/value.hpp
  /usr/local/include/bsoncxx/v_noabi/bsoncxx/array/view.hpp
@@ -563,19 +615,17 @@ CMakeFiles/PleaseWork.dir/main.cpp.o
  /usr/local/include/bsoncxx/v_noabi/bsoncxx/builder/stream/array_context.hpp
  /usr/local/include/bsoncxx/v_noabi/bsoncxx/builder/stream/single_context.hpp
  /usr/local/include/bsoncxx/v_noabi/bsoncxx/builder/stream/array.hpp
+ /usr/local/include/bsoncxx/v_noabi/bsoncxx/exception/error_code.hpp
  /Users/hritikbharucha/Qt/6.4.0/macos/lib/QtWidgets.framework/Headers/QApplication
  /Users/hritikbharucha/Qt/6.4.0/macos/lib/QtWidgets.framework/Headers/qapplication.h
  /Users/hritikbharucha/Qt/6.4.0/macos/lib/QtWidgets.framework/Headers/qtwidgetsglobal.h
  /Users/hritikbharucha/Qt/6.4.0/macos/lib/QtGui.framework/Headers/qtguiglobal.h
  /Users/hritikbharucha/Qt/6.4.0/macos/lib/QtCore.framework/Headers/qglobal.h
- /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/stdbool.h
- /Library/Developer/CommandLineTools/usr/lib/clang/14.0.0/include/stdbool.h
  /Users/hritikbharucha/Qt/6.4.0/macos/lib/QtCore.framework/Headers/qconfig.h
  /Users/hritikbharucha/Qt/6.4.0/macos/lib/QtCore.framework/Headers/qtcore-config.h
  /Users/hritikbharucha/Qt/6.4.0/macos/lib/QtCore.framework/Headers/qtconfigmacros.h
  /Users/hritikbharucha/Qt/6.4.0/macos/lib/QtCore.framework/Headers/qtcoreexports.h
  /Users/hritikbharucha/Qt/6.4.0/macos/lib/QtCore.framework/Headers/qsystemdetection.h
- /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/TargetConditionals.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/AvailabilityMacros.h
  /Users/hritikbharucha/Qt/6.4.0/macos/lib/QtCore.framework/Headers/qprocessordetection.h
  /Users/hritikbharucha/Qt/6.4.0/macos/lib/QtCore.framework/Headers/qcompilerdetection.h
@@ -721,6 +771,9 @@ CMakeFiles/PleaseWork.dir/main.cpp.o
  /Users/hritikbharucha/Qt/6.4.0/macos/lib/QtWidgets.framework/Headers/qlabel.h
  /Users/hritikbharucha/Qt/6.4.0/macos/lib/QtGui.framework/Headers/qpicture.h
  /Users/hritikbharucha/Qt/6.4.0/macos/lib/QtCore.framework/Headers/qiodevice.h
+ /Users/hritikbharucha/Qt/6.4.0/macos/lib/QtWidgets.framework/Headers/QMessageBox
+ /Users/hritikbharucha/Qt/6.4.0/macos/lib/QtWidgets.framework/Headers/qmessagebox.h
+ /Users/hritikbharucha/Qt/6.4.0/macos/lib/QtWidgets.framework/Headers/qdialog.h
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/random
  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/sstream
 

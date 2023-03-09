@@ -65,6 +65,26 @@ CMAKE_BINARY_DIR = /Users/hritikbharucha/Desktop/C++/PleaseWork/build
 #=============================================================================
 # Targets provided globally by CMake.
 
+# Special rule for the target package
+package: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
+	/usr/local/Cellar/cmake/3.25.2/bin/cpack --config ./CPackConfig.cmake
+.PHONY : package
+
+# Special rule for the target package
+package/fast: package
+.PHONY : package/fast
+
+# Special rule for the target package_source
+package_source:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
+	/usr/local/Cellar/cmake/3.25.2/bin/cpack --config ./CPackSourceConfig.cmake /Users/hritikbharucha/Desktop/C++/PleaseWork/build/CPackSourceConfig.cmake
+.PHONY : package_source
+
+# Special rule for the target package_source
+package_source/fast: package_source
+.PHONY : package_source/fast
+
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
@@ -130,6 +150,32 @@ PleaseWork/fast:
 .PHONY : PleaseWork/fast
 
 #=============================================================================
+# Target rules for targets named server
+
+# Build rule for target.
+server: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 server
+.PHONY : server
+
+# fast build rule for target.
+server/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/build
+.PHONY : server/fast
+
+#=============================================================================
+# Target rules for targets named client
+
+# Build rule for target.
+client: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 client
+.PHONY : client
+
+# fast build rule for target.
+client/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/build
+.PHONY : client/fast
+
+#=============================================================================
 # Target rules for targets named PleaseWork_autogen
 
 # Build rule for target.
@@ -141,6 +187,32 @@ PleaseWork_autogen: cmake_check_build_system
 PleaseWork_autogen/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PleaseWork_autogen.dir/build.make CMakeFiles/PleaseWork_autogen.dir/build
 .PHONY : PleaseWork_autogen/fast
+
+#=============================================================================
+# Target rules for targets named server_autogen
+
+# Build rule for target.
+server_autogen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 server_autogen
+.PHONY : server_autogen
+
+# fast build rule for target.
+server_autogen/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server_autogen.dir/build.make CMakeFiles/server_autogen.dir/build
+.PHONY : server_autogen/fast
+
+#=============================================================================
+# Target rules for targets named client_autogen
+
+# Build rule for target.
+client_autogen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 client_autogen
+.PHONY : client_autogen
+
+# fast build rule for target.
+client_autogen/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client_autogen.dir/build.make CMakeFiles/client_autogen.dir/build
+.PHONY : client_autogen/fast
 
 PleaseWork_autogen/mocs_compilation.o: PleaseWork_autogen/mocs_compilation.cpp.o
 .PHONY : PleaseWork_autogen/mocs_compilation.o
@@ -166,6 +238,54 @@ PleaseWork_autogen/mocs_compilation.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PleaseWork.dir/build.make CMakeFiles/PleaseWork.dir/PleaseWork_autogen/mocs_compilation.cpp.s
 .PHONY : PleaseWork_autogen/mocs_compilation.cpp.s
 
+client.o: client.cpp.o
+.PHONY : client.o
+
+# target to build an object file
+client.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/client.cpp.o
+.PHONY : client.cpp.o
+
+client.i: client.cpp.i
+.PHONY : client.i
+
+# target to preprocess a source file
+client.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/client.cpp.i
+.PHONY : client.cpp.i
+
+client.s: client.cpp.s
+.PHONY : client.s
+
+# target to generate assembly for a file
+client.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/client.cpp.s
+.PHONY : client.cpp.s
+
+client_autogen/mocs_compilation.o: client_autogen/mocs_compilation.cpp.o
+.PHONY : client_autogen/mocs_compilation.o
+
+# target to build an object file
+client_autogen/mocs_compilation.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/client_autogen/mocs_compilation.cpp.o
+.PHONY : client_autogen/mocs_compilation.cpp.o
+
+client_autogen/mocs_compilation.i: client_autogen/mocs_compilation.cpp.i
+.PHONY : client_autogen/mocs_compilation.i
+
+# target to preprocess a source file
+client_autogen/mocs_compilation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/client_autogen/mocs_compilation.cpp.i
+.PHONY : client_autogen/mocs_compilation.cpp.i
+
+client_autogen/mocs_compilation.s: client_autogen/mocs_compilation.cpp.s
+.PHONY : client_autogen/mocs_compilation.s
+
+# target to generate assembly for a file
+client_autogen/mocs_compilation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/client.dir/build.make CMakeFiles/client.dir/client_autogen/mocs_compilation.cpp.s
+.PHONY : client_autogen/mocs_compilation.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -190,6 +310,54 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PleaseWork.dir/build.make CMakeFiles/PleaseWork.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+server.o: server.cpp.o
+.PHONY : server.o
+
+# target to build an object file
+server.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/server.cpp.o
+.PHONY : server.cpp.o
+
+server.i: server.cpp.i
+.PHONY : server.i
+
+# target to preprocess a source file
+server.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/server.cpp.i
+.PHONY : server.cpp.i
+
+server.s: server.cpp.s
+.PHONY : server.s
+
+# target to generate assembly for a file
+server.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/server.cpp.s
+.PHONY : server.cpp.s
+
+server_autogen/mocs_compilation.o: server_autogen/mocs_compilation.cpp.o
+.PHONY : server_autogen/mocs_compilation.o
+
+# target to build an object file
+server_autogen/mocs_compilation.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/server_autogen/mocs_compilation.cpp.o
+.PHONY : server_autogen/mocs_compilation.cpp.o
+
+server_autogen/mocs_compilation.i: server_autogen/mocs_compilation.cpp.i
+.PHONY : server_autogen/mocs_compilation.i
+
+# target to preprocess a source file
+server_autogen/mocs_compilation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/server_autogen/mocs_compilation.cpp.i
+.PHONY : server_autogen/mocs_compilation.cpp.i
+
+server_autogen/mocs_compilation.s: server_autogen/mocs_compilation.cpp.s
+.PHONY : server_autogen/mocs_compilation.s
+
+# target to generate assembly for a file
+server_autogen/mocs_compilation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/server_autogen/mocs_compilation.cpp.s
+.PHONY : server_autogen/mocs_compilation.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -197,15 +365,33 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
+	@echo "... package"
+	@echo "... package_source"
 	@echo "... rebuild_cache"
 	@echo "... PleaseWork_autogen"
+	@echo "... client_autogen"
+	@echo "... server_autogen"
 	@echo "... PleaseWork"
+	@echo "... client"
+	@echo "... server"
 	@echo "... PleaseWork_autogen/mocs_compilation.o"
 	@echo "... PleaseWork_autogen/mocs_compilation.i"
 	@echo "... PleaseWork_autogen/mocs_compilation.s"
+	@echo "... client.o"
+	@echo "... client.i"
+	@echo "... client.s"
+	@echo "... client_autogen/mocs_compilation.o"
+	@echo "... client_autogen/mocs_compilation.i"
+	@echo "... client_autogen/mocs_compilation.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... server.o"
+	@echo "... server.i"
+	@echo "... server.s"
+	@echo "... server_autogen/mocs_compilation.o"
+	@echo "... server_autogen/mocs_compilation.i"
+	@echo "... server_autogen/mocs_compilation.s"
 .PHONY : help
 
 
