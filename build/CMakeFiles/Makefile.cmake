@@ -154,6 +154,8 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/usr/local/Cellar/cmake/3.25.2/share/cmake/Modules/CMakeParseArguments.cmake"
   "/usr/local/Cellar/cmake/3.25.2/share/cmake/Modules/CMakeSystemSpecificInformation.cmake"
   "/usr/local/Cellar/cmake/3.25.2/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake"
+  "/usr/local/Cellar/cmake/3.25.2/share/cmake/Modules/CPack.cmake"
+  "/usr/local/Cellar/cmake/3.25.2/share/cmake/Modules/CPackComponent.cmake"
   "/usr/local/Cellar/cmake/3.25.2/share/cmake/Modules/CheckCSourceCompiles.cmake"
   "/usr/local/Cellar/cmake/3.25.2/share/cmake/Modules/CheckCXXCompilerFlag.cmake"
   "/usr/local/Cellar/cmake/3.25.2/share/cmake/Modules/CheckCXXSourceCompiles.cmake"
@@ -181,6 +183,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/usr/local/Cellar/cmake/3.25.2/share/cmake/Modules/Platform/Darwin-Initialize.cmake"
   "/usr/local/Cellar/cmake/3.25.2/share/cmake/Modules/Platform/Darwin.cmake"
   "/usr/local/Cellar/cmake/3.25.2/share/cmake/Modules/Platform/UnixPaths.cmake"
+  "/usr/local/Cellar/cmake/3.25.2/share/cmake/Templates/CPackConfig.cmake.in"
   "/usr/local/lib/cmake/bsoncxx-3.7.0/bsoncxx-config-version.cmake"
   "/usr/local/lib/cmake/bsoncxx-3.7.0/bsoncxx-config.cmake"
   "/usr/local/lib/cmake/bsoncxx-3.7.0/bsoncxx_targets-release.cmake"
@@ -199,7 +202,11 @@ set(CMAKE_MAKEFILE_OUTPUTS
 
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
+  "CPackConfig.cmake"
+  "CPackSourceConfig.cmake"
   "CMakeFiles/PleaseWork_autogen.dir/AutogenInfo.json"
+  "CMakeFiles/server_autogen.dir/AutogenInfo.json"
+  "CMakeFiles/client_autogen.dir/AutogenInfo.json"
   ".qt/QtDeploySupport.cmake"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   )
@@ -207,5 +214,9 @@ set(CMAKE_MAKEFILE_PRODUCTS
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/PleaseWork.dir/DependInfo.cmake"
+  "CMakeFiles/server.dir/DependInfo.cmake"
+  "CMakeFiles/client.dir/DependInfo.cmake"
   "CMakeFiles/PleaseWork_autogen.dir/DependInfo.cmake"
+  "CMakeFiles/server_autogen.dir/DependInfo.cmake"
+  "CMakeFiles/client_autogen.dir/DependInfo.cmake"
   )

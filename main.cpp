@@ -7,6 +7,7 @@
 #include <mongocxx/client.hpp>
 #include <mongocxx/stdx.hpp>
 #include <mongocxx/instance.hpp>
+#include <mongocxx/options/find.hpp>
 #include <mongocxx/uri.hpp>
 #include <mongocxx/options/client.hpp>
 #include <bsoncxx/builder/stream/helpers.hpp>
@@ -132,29 +133,61 @@ void showChatWindow() {
     //     chatText->append("<b>" + username + "</b>" + message);
     //     chatText->setAlignment(Qt::AlignLeft);
     // });
-       std::thread watch_thread([]() {
-     mongocxx::options::change_stream options;
-    // Wait up to 1 second before polling again.
-    const std::chrono::milliseconds await_time{1000};
-    options.max_await_time(await_time);
-    const auto end = std::chrono::system_clock::now() + std::chrono::seconds{300};
-    mongocxx::change_stream stream = coll.watch(options);
-     
-    
-    
-    while (std::chrono::system_clock::now() < end) {
+
+
+    std::thread watch_thread([]() {
+        mongocxx::options::change_stream options;
+        // Wait up to 1 second before polling again.
+        const std::chrono::milliseconds await_time{1000};
+        options.max_await_time(await_time);
+        const auto end = std::chrono::system_clock::now() + std::chrono::seconds{300};
+        mongocxx::change_stream stream = coll.watch(options);
+        
+        while (std::chrono::system_clock::now() < end) {
             for (const auto& event : stream) {
-                std::cout << bsoncxx::to_json(event) << std::endl;
+                std::cout << "STREAM IN THE CHAT: " << bsoncxx::to_json(event) << std::endl;
                 // auto update_description = event["updateDescription"];
                 // auto updated_fields = update_description["updatedFields"];
+                // auto messages = updated_fields["messages"].get_array();
 
-    }
-    }});
+                // std::cout << "MESSAGES: " << bsoncxx::to_json(messages) << std::endl;     
+
+                // auto messages_value = updated_fields["messages"];
+                // if (messages_value && messages_value.type() == bsoncxx::type::k_array) {
+                //     auto messages = messages_value.get_array().value;
+                //     for (const auto& message : messages) {
+                //         if (message.type() != bsoncxx::type::k_document) {
+                //             std::cerr << "Invalid message type" << std::endl;
+                //             continue;
+                //         }
+                //         auto message_view = message.get_document().view();
+                //         auto message_text = message_view["text"].get_utf8_view().value();
+                //         std::cout << "MESSAGE: " << message_text << std::endl;
+                //     }
+
+                // } else {
+                //     std::cout << "No messages found" << std::endl;
+                // }           
+                
+                // if (secured) {
+                //     secured_flag = true;
+                //     dispatch_async(dispatch_get_main_queue(), ^{
+                //         // update the window's drag regions here
+                //         user = 0;
+                //         showChatWindow();
+                //     });
+
+                //     break;
+                //     std::cout << "secured field is true" << std::endl;
+                // } 
+    
+                // if (std::chrono::system_clock::now() >= end)
+                //     break;
+            }
+        }
+    });
 
     watch_thread.detach();
-
-
-
     
 }
 
@@ -286,55 +319,53 @@ void showCodeWindow() {
  
     // QObject::connect(startChattingButton, &QPushButton::clicked, [](){
        
-    //     // coll.update_one(document{} << "secured" << false << finalize,
-    //     //               document{} << "$set" << open_document <<
-    //     //                 "secured" << true << close_document << finalize);
+    //     coll.update_one(document{} << "secured" << false << finalize,
+    //                   document{} << "$set" << open_document <<
+    //                     "secured" << true << close_document << finalize);
     // });
 
            
-        // showChatWindow();
+    showChatWindow();
             // document inserted successfully, continue with your code
    
-    std::thread watch_thread([]() {
-     mongocxx::options::change_stream options;
-    // Wait up to 1 second before polling again.
-    bool secured_flag = false;
-    const std::chrono::milliseconds await_time{1000};
-    options.max_await_time(await_time);
-    const auto end = std::chrono::system_clock::now() + std::chrono::seconds{300};
-    mongocxx::change_stream stream = coll.watch(options);
-     
-    
-    
-    while (std::chrono::system_clock::now() < end) {
-            for (const auto& event : stream) {
-                std::cout << bsoncxx::to_json(event) << std::endl;
-                auto update_description = event["updateDescription"];
-                auto updated_fields = update_description["updatedFields"];
-                auto secured = updated_fields["secured"].get_bool();
-                if (secured) {
-                    secured_flag = true;
-                    dispatch_async(dispatch_get_main_queue(), ^{
-                // update the window's drag regions here
-                user = 0;
-                showChatWindow();
-                });
+    // std::thread watch_thread([]() {
+    //     mongocxx::options::change_stream options;
+    //     // Wait up to 1 second before polling again.
+    //     bool secured_flag = false;
+    //     const std::chrono::milliseconds await_time{1000};
+    //     options.max_await_time(await_time);
+    //     const auto end = std::chrono::system_clock::now() + std::chrono::seconds{300};
+    //     mongocxx::change_stream stream = coll.watch(options);
+        
+    //     while (std::chrono::system_clock::now() < end) {
+    //         for (const auto& event : stream) {
+    //             std::cout << "IN CODE WINDOW: " << bsoncxx::to_json(event) << std::endl;
+    //             auto update_description = event["updateDescription"];
+    //             auto updated_fields = update_description["updatedFields"];
+    //             auto secured = updated_fields["secured"].get_bool();
+    //             if (secured) {
+    //                 secured_flag = true;
+    //                 dispatch_async(dispatch_get_main_queue(), ^{
+    //             // update the window's drag regions here
+    //             user = 0;
+    //             showChatWindow();
+    //             });
 
-                    break;
-                    std::cout << "secured field is true" << std::endl;
-                } else {
-                    std::cout << "secured field is false" << std::endl;
-                }
+    //                 break;
+    //                 std::cout << "secured field is true" << std::endl;
+    //             } else {
+    //                 std::cout << "secured field is false" << std::endl;
+    //             }
     
-                if (std::chrono::system_clock::now() >= end)
-                    break;
-            }
-            if(secured_flag) {
-                break;
-            }
-    }
-    });
-    watch_thread.detach();
+    //             if (std::chrono::system_clock::now() >= end)
+    //                 break;
+    //         }
+    //         if(secured_flag) {
+    //             break;
+    //         }
+    //     }
+    // });
+    // watch_thread.detach();
     std::cout << "pizza2" << std::endl;
 
 

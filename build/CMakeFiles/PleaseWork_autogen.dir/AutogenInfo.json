@@ -240,7 +240,17 @@
 		"/Users/hritikbharucha/Qt/6.4.0/macos/lib/cmake/Qt6Widgets/Qt6QMacStylePluginTargets.cmake",
 		"/Users/hritikbharucha/Qt/6.4.0/macos/lib/cmake/Qt6Widgets/Qt6QMacStylePluginTargets-relwithdebinfo.cmake",
 		"/Users/hritikbharucha/Qt/6.4.0/macos/lib/cmake/Qt6Widgets/Qt6QMacStylePluginAdditionalTargetInfo.cmake",
-		"/usr/local/Cellar/cmake/3.25.2/share/cmake/Modules/GNUInstallDirs.cmake"
+		"/usr/local/Cellar/cmake/3.25.2/share/cmake/Modules/GNUInstallDirs.cmake",
+		"/usr/local/Cellar/cmake/3.25.2/share/cmake/Modules/FindThreads.cmake",
+		"/usr/local/Cellar/cmake/3.25.2/share/cmake/Modules/CheckLibraryExists.cmake",
+		"/usr/local/Cellar/cmake/3.25.2/share/cmake/Modules/CheckIncludeFile.cmake",
+		"/usr/local/Cellar/cmake/3.25.2/share/cmake/Modules/CheckCSourceCompiles.cmake",
+		"/usr/local/Cellar/cmake/3.25.2/share/cmake/Modules/FindPackageHandleStandardArgs.cmake",
+		"/usr/local/Cellar/cmake/3.25.2/share/cmake/Modules/FindPackageMessage.cmake",
+		"/usr/local/Cellar/cmake/3.25.2/share/cmake/Modules/CPack.cmake",
+		"/usr/local/Cellar/cmake/3.25.2/share/cmake/Modules/CPackComponent.cmake",
+		"/usr/local/Cellar/cmake/3.25.2/share/cmake/Templates/CPackConfig.cmake.in",
+		"/usr/local/Cellar/cmake/3.25.2/share/cmake/Templates/CPackConfig.cmake.in"
 	],
 	"CMAKE_SOURCE_DIR" : "/Users/hritikbharucha/Desktop/C++/PleaseWork",
 	"DEP_FILE" : "",

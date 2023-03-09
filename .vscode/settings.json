@@ -61,6 +61,9 @@
         "unordered_map": "cpp",
         "variant": "cpp",
         "vector": "cpp",
-        "algorithm": "cpp"
+        "algorithm": "cpp",
+        "thread": "cpp",
+        "numeric": "cpp",
+        "random": "cpp"
     }
 }

@@ -1,4 +1,10 @@
 /Users/hritikbharucha/Desktop/C++/PleaseWork/build/CMakeFiles/PleaseWork.dir
+/Users/hritikbharucha/Desktop/C++/PleaseWork/build/CMakeFiles/server.dir
+/Users/hritikbharucha/Desktop/C++/PleaseWork/build/CMakeFiles/client.dir
+/Users/hritikbharucha/Desktop/C++/PleaseWork/build/CMakeFiles/package.dir
+/Users/hritikbharucha/Desktop/C++/PleaseWork/build/CMakeFiles/package_source.dir
 /Users/hritikbharucha/Desktop/C++/PleaseWork/build/CMakeFiles/edit_cache.dir
 /Users/hritikbharucha/Desktop/C++/PleaseWork/build/CMakeFiles/rebuild_cache.dir
 /Users/hritikbharucha/Desktop/C++/PleaseWork/build/CMakeFiles/PleaseWork_autogen.dir
+/Users/hritikbharucha/Desktop/C++/PleaseWork/build/CMakeFiles/server_autogen.dir
+/Users/hritikbharucha/Desktop/C++/PleaseWork/build/CMakeFiles/client_autogen.dir
