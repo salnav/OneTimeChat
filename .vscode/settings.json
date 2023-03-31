@@ -64,6 +64,11 @@
         "algorithm": "cpp",
         "thread": "cpp",
         "numeric": "cpp",
-        "random": "cpp"
+        "random": "cpp",
+        "deque": "cpp",
+        "fstream": "cpp",
+        "iomanip": "cpp",
+        "stack": "cpp",
+        "filesystem": "cpp"
     }
 }

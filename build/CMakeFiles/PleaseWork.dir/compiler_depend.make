@@ -773,8 +773,37 @@ CMakeFiles/PleaseWork.dir/main.cpp.o: /Users/hritikbharucha/Desktop/C++/PleaseWo
   /Users/hritikbharucha/Qt/6.4.0/macos/lib/QtWidgets.framework/Headers/qmessagebox.h \
   /Users/hritikbharucha/Qt/6.4.0/macos/lib/QtWidgets.framework/Headers/qdialog.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/random \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/sstream
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/sstream \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/socket.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/constrained_ctypes.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/machine/_param.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/i386/_param.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/net/net_kev.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_sa_family_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_socklen_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_iovec_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/netinet/in.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/netinet6/in6.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/arpa/inet.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/netdb.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/poll.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/poll.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/ifaddrs.h
 
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/ifaddrs.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/netinet6/in6.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_sa_family_t.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/net/net_kev.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/i386/_param.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/machine/_param.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/constrained_ctypes.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/random:
 
@@ -785,6 +814,8 @@ CMakeFiles/PleaseWork.dir/main.cpp.o: /Users/hritikbharucha/Desktop/C++/PleaseWo
 /Users/hritikbharucha/Qt/6.4.0/macos/lib/QtWidgets.framework/Headers/QMessageBox:
 
 /Users/hritikbharucha/Qt/6.4.0/macos/lib/QtWidgets.framework/Headers/qlabel.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/poll.h:
 
 /Users/hritikbharucha/Qt/6.4.0/macos/lib/QtWidgets.framework/Headers/QPushButton:
 
@@ -893,6 +924,8 @@ CMakeFiles/PleaseWork.dir/main.cpp.o: /Users/hritikbharucha/Desktop/C++/PleaseWo
 /Users/hritikbharucha/Qt/6.4.0/macos/lib/QtGui.framework/Headers/qpaintdevice.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/math.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/netdb.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/cmath:
 
@@ -1330,6 +1363,8 @@ CMakeFiles/PleaseWork.dir/main.cpp.o: /Users/hritikbharucha/Desktop/C++/PleaseWo
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/stable_sort.h:
 
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_socklen_t.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/partition_copy.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_int32_t.h:
@@ -1359,6 +1394,8 @@ CMakeFiles/PleaseWork.dir/main.cpp.o: /Users/hritikbharucha/Desktop/C++/PleaseWo
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__memory/construct_at.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/max_element.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_iovec_t.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/dispatch/block.h:
 
@@ -1488,6 +1525,8 @@ CMakeFiles/PleaseWork.dir/main.cpp.o: /Users/hritikbharucha/Desktop/C++/PleaseWo
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/for_each_n.h:
 
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/netinet/in.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__iterator/ostream_iterator.h:
 
 /Users/hritikbharucha/Qt/6.4.0/macos/lib/QtCore.framework/Headers/qglobal.h:
@@ -1559,6 +1598,8 @@ CMakeFiles/PleaseWork.dir/main.cpp.o: /Users/hritikbharucha/Desktop/C++/PleaseWo
 /Users/hritikbharucha/Qt/6.4.0/macos/lib/QtCore.framework/Headers/qmargins.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/remove.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/socket.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/fcntl.h:
 
@@ -2028,6 +2069,8 @@ CMakeFiles/PleaseWork.dir/main.cpp.o: /Users/hritikbharucha/Desktop/C++/PleaseWo
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_endian.h:
 
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/poll.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__tree:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/_locale.h:
@@ -2219,6 +2262,8 @@ PleaseWork_autogen/mocs_compilation.cpp:
 /usr/local/include/bsoncxx/v_noabi/bsoncxx/array/value.hpp:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__random/uniform_int_distribution.h:
+
+/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/arpa/inet.h:
 
 /Users/hritikbharucha/Qt/6.4.0/macos/lib/QtCore.framework/Headers/qnamespace.h:
 
