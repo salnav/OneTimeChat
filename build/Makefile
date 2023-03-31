@@ -214,6 +214,30 @@ client_autogen/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/client_autogen.dir/build.make CMakeFiles/client_autogen.dir/build
 .PHONY : client_autogen/fast
 
+MyLineEdit.o: MyLineEdit.cpp.o
+.PHONY : MyLineEdit.o
+
+# target to build an object file
+MyLineEdit.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PleaseWork.dir/build.make CMakeFiles/PleaseWork.dir/MyLineEdit.cpp.o
+.PHONY : MyLineEdit.cpp.o
+
+MyLineEdit.i: MyLineEdit.cpp.i
+.PHONY : MyLineEdit.i
+
+# target to preprocess a source file
+MyLineEdit.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PleaseWork.dir/build.make CMakeFiles/PleaseWork.dir/MyLineEdit.cpp.i
+.PHONY : MyLineEdit.cpp.i
+
+MyLineEdit.s: MyLineEdit.cpp.s
+.PHONY : MyLineEdit.s
+
+# target to generate assembly for a file
+MyLineEdit.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PleaseWork.dir/build.make CMakeFiles/PleaseWork.dir/MyLineEdit.cpp.s
+.PHONY : MyLineEdit.cpp.s
+
 PleaseWork_autogen/mocs_compilation.o: PleaseWork_autogen/mocs_compilation.cpp.o
 .PHONY : PleaseWork_autogen/mocs_compilation.o
 
@@ -374,6 +398,9 @@ help:
 	@echo "... PleaseWork"
 	@echo "... client"
 	@echo "... server"
+	@echo "... MyLineEdit.o"
+	@echo "... MyLineEdit.i"
+	@echo "... MyLineEdit.s"
 	@echo "... PleaseWork_autogen/mocs_compilation.o"
 	@echo "... PleaseWork_autogen/mocs_compilation.i"
 	@echo "... PleaseWork_autogen/mocs_compilation.s"

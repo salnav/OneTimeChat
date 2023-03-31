@@ -40,6 +40,7 @@
 #include <netdb.h>
 #include <poll.h>
 #include <ifaddrs.h>
+#include "MyLineEdit.h"
 
 #define PORT 9034
 #define PORTSTR "9034"   // Port we're listening on
@@ -55,7 +56,7 @@ using bsoncxx::builder::stream::finalize;
 using bsoncxx::builder::stream::open_array;
 using bsoncxx::builder::stream::open_document;
 
-using namespace std;
+// using namespace std;
 mongocxx::instance inst{};
 const auto uri = mongocxx::uri{"mongodb+srv://testableBoys:ABC@cluster0.oe7ufff.mongodb.net/?retryWrites=true&w=majority"};
 mongocxx::database db;
@@ -461,7 +462,7 @@ void listenForMessages(int client_fd, QTextEdit *chatText) {
             std::string sender_name = "";
             if (colon_pos != std::string::npos) {
                 // Extract the sender name from the original string
-                sender_name = message.substr(0, colon_pos+2);
+                sender_name = "Recieved: ";
                 message = message.substr(colon_pos+2);
             }
 
@@ -499,7 +500,7 @@ void showChatWindow(int client_socket) {
 
     QObject::connect(sendButton, &QPushButton::clicked, [inputText, chatText, client_socket](){
         QString message = inputText->text();
-        QString username = "You: ";
+        QString username = "Sent: ";
         if(!message.isEmpty()){
             // bsoncxx::document::value message_info = bsoncxx::builder::stream::document{} << "user" << user << "message" << message.toStdString() << bsoncxx::builder::stream::finalize;
             // bsoncxx::document::view message_info_view = message_info.view();
@@ -517,10 +518,6 @@ void showChatWindow(int client_socket) {
     //    coll.update_one({}, document{} << "$push" << open_document << "messages" << message_info_view << close_document << finalize);
 
     });
-
-    
-
-
     
 }
 
@@ -541,7 +538,7 @@ void showEnterCodeWindow() {
     hLayout->addWidget(codeLabel);
 
     // Create the textbox
-    QLineEdit* codeTextbox = new QLineEdit;
+    MyLineEdit* codeTextbox = new MyLineEdit;
     codeTextbox->setFixedSize(QSize(200, 40));
     hLayout->addWidget(codeTextbox);
 
@@ -554,19 +551,27 @@ void showEnterCodeWindow() {
     startChatButton->setStyleSheet("background-color: #f0f0f0; border-radius: 10px; color: black");
     layout->addWidget(startChatButton);
 
+    QObject::connect(codeTextbox, &MyLineEdit::clicked, [=]() {
+        if (codeTextbox->text() == "Invalid Code") {
+            codeTextbox->setStyleSheet("");
+            codeTextbox->setText("");
+        }
+    });
+
     QObject::connect(startChatButton, &QPushButton::clicked, [codeTextbox](){
         QString codeText = codeTextbox->text();
         std::string code = codeText.toStdString();
         std::string IP = findIP(code);
         if (IP == "") {
             std::cout << "Invalid Code" << std::endl;
+            codeTextbox->setText("Invalid Code");
+            codeTextbox->setStyleSheet("color: red");
         } else {
-            std::cout << "COdfjngasgrbafpsibg" << std::endl;
+            std::cout << "Connecting" << std::endl;
             int client_socket = joinServer(IP);
             showChatWindow(client_socket);
         }
-       
-
+        
     });
         
     

@@ -784,4 +784,21 @@ CMakeFiles/PleaseWork.dir/main.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/netdb.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/poll.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/poll.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/ifaddrs.h
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/ifaddrs.h \
+  /Users/hritikbharucha/Desktop/C++/PleaseWork/MyLineEdit.h \
+  /Users/hritikbharucha/Qt/6.4.0/macos/lib/QtCore.framework/Headers/QObject \
+  /Users/hritikbharucha/Qt/6.4.0/macos/lib/QtWidgets.framework/Headers/QWidget \
+  /Users/hritikbharucha/Qt/6.4.0/macos/lib/QtGui.framework/Headers/QMouseEvent \
+  /Users/hritikbharucha/Qt/6.4.0/macos/lib/QtGui.framework/Headers/qevent.h \
+  /Users/hritikbharucha/Qt/6.4.0/macos/lib/QtCore.framework/Headers/qpointer.h \
+  /Users/hritikbharucha/Qt/6.4.0/macos/lib/QtGui.framework/Headers/qeventpoint.h \
+  /Users/hritikbharucha/Qt/6.4.0/macos/lib/QtGui.framework/Headers/qvector2d.h \
+  /Users/hritikbharucha/Qt/6.4.0/macos/lib/QtGui.framework/Headers/qvectornd.h \
+  /Users/hritikbharucha/Qt/6.4.0/macos/lib/QtGui.framework/Headers/qpointingdevice.h \
+  /Users/hritikbharucha/Qt/6.4.0/macos/lib/QtGui.framework/Headers/qinputdevice.h \
+  /Users/hritikbharucha/Qt/6.4.0/macos/lib/QtGui.framework/Headers/qscreen.h \
+  /Users/hritikbharucha/Qt/6.4.0/macos/lib/QtCore.framework/Headers/QList \
+  /Users/hritikbharucha/Qt/6.4.0/macos/lib/QtCore.framework/Headers/QRect \
+  /Users/hritikbharucha/Qt/6.4.0/macos/lib/QtCore.framework/Headers/QSize \
+  /Users/hritikbharucha/Qt/6.4.0/macos/lib/QtCore.framework/Headers/QSizeF \
+  /Users/hritikbharucha/Qt/6.4.0/macos/lib/QtGui.framework/Headers/QTransform
