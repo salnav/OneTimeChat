@@ -11,6 +11,11 @@
 },
 {
   "directory": "/Users/hritikbharucha/Desktop/C++/PleaseWork/build",
+  "command": "/usr/bin/clang++ -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB -I/Users/hritikbharucha/Desktop/C++/PleaseWork/build/PleaseWork_autogen/include -I/usr/local/include/libmongoc-1.0 -I/usr/local/include/libbson-1.0 -I/usr/local/lib -isystem /usr/local/include/mongocxx/v_noabi -isystem /usr/local/include/bsoncxx/v_noabi -isystem /Users/hritikbharucha/Qt/6.4.0/macos/lib/QtWidgets.framework/Headers -iframework /Users/hritikbharucha/Qt/6.4.0/macos/lib -isystem /Users/hritikbharucha/Qt/6.4.0/macos/lib/QtCore.framework/Headers -isystem /Users/hritikbharucha/Qt/6.4.0/macos/mkspecs/macx-clang -isystem /Users/hritikbharucha/Qt/6.4.0/macos/include -isystem /Users/hritikbharucha/Qt/6.4.0/macos/lib/QtGui.framework/Headers  -Wall -Wextra -Werror -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -mmacosx-version-min=13.0 -std=c++17 -o CMakeFiles/PleaseWork.dir/MyLineEdit.cpp.o -c /Users/hritikbharucha/Desktop/C++/PleaseWork/MyLineEdit.cpp",
+  "file": "/Users/hritikbharucha/Desktop/C++/PleaseWork/MyLineEdit.cpp"
+},
+{
+  "directory": "/Users/hritikbharucha/Desktop/C++/PleaseWork/build",
   "command": "/usr/bin/clang++  -I/Users/hritikbharucha/Desktop/C++/PleaseWork/build/server_autogen/include -I/usr/local/include/mongocxx/v_noabi -I/usr/local/include/bsoncxx/v_noabi -I/usr/local/include/libmongoc-1.0 -I/usr/local/include/libbson-1.0 -I/usr/local/lib  -Wall -Wextra -Werror -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -mmacosx-version-min=13.0 -std=c++17 -o CMakeFiles/server.dir/server_autogen/mocs_compilation.cpp.o -c /Users/hritikbharucha/Desktop/C++/PleaseWork/build/server_autogen/mocs_compilation.cpp",
   "file": "/Users/hritikbharucha/Desktop/C++/PleaseWork/build/server_autogen/mocs_compilation.cpp"
 },
