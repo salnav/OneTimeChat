@@ -869,6 +869,8 @@ void createServer() {
                         char sender_name[50];
                         snprintf(sender_name, sizeof(sender_name), "Client %d: ", sender_fd); // Format the sender's name
 
+                        std::cout << "GOT A MESSAGE!" << std::endl;
+
                         for(int j = 0; j < fd_count; j++) {
                             // Send to everyone!
                             int dest_fd = pfds[j].fd;
@@ -876,12 +878,14 @@ void createServer() {
                                 char message[1024];
                                 snprintf(message, sizeof(message), "%s%s", sender_name, buf);
                                 // printf("%s", message);
-                                std::cout << message << std::endl;
+                                // std::cout << message << std::endl;
                                 if (send(dest_fd, message, nbytes + strlen(sender_name), 0) == -1) {
                                     perror("send");
                                 }
                             } 
                         }
+                        // Clear the contents of the buffer
+                        memset(buf, 0, sizeof(buf));
                     }
                 }
 
@@ -891,7 +895,7 @@ void createServer() {
     } // END for(;;)--and you thought it would never end!
 }
 
-void joinServer(std::string serverIP) {
+int joinServer(std::string serverIP) {
     // Create a client connection object
     int client_fd = socket(AF_INET, SOCK_STREAM, 0);
     if (client_fd == -1) {
@@ -915,9 +919,39 @@ void joinServer(std::string serverIP) {
 
     // Add the client to the pfds array
     // add_to_pfds(&pfds, client_fd, &fd_count, fd_size, POLLIN);
+
+    return client_fd;
 }
 
-void showChatWindow() {
+void listenForMessages(int client_fd, QTextEdit *chatText) {
+    while (true) {
+        char buffer[1024];
+        int nbytes = recv(client_fd, buffer, sizeof(buffer), 0);
+        if (nbytes <= 0) {
+            // Handle error or connection closed by server
+            break;
+        } else {
+            // Process received message
+            std::string message(buffer, nbytes);
+            // Display the message or process it in some other way
+            // std::cout << message << std::endl;
+
+            // Get the position of the colon in the sender name
+            std::size_t colon_pos = message.find(":");
+            std::string sender_name = "";
+            if (colon_pos != std::string::npos) {
+                // Extract the sender name from the original string
+                sender_name = message.substr(0, colon_pos+2);
+                message = message.substr(colon_pos+2);
+            }
+
+            chatText->append("<b>" + QString::fromStdString(sender_name) + "</b>" + QString::fromStdString(message));
+            chatText->setAlignment(Qt::AlignLeft);
+        }
+    }
+}
+
+void showChatWindow(int client_socket) {
     QWidget *window = new QWidget;
     window->resize(800, 600);
     window->setMaximumSize(window->size());
@@ -937,7 +971,13 @@ void showChatWindow() {
     window->setLayout(layout);
     window->show();
 
-    QObject::connect(sendButton, &QPushButton::clicked, [inputText](){
+    std::thread client_thread([client_socket, chatText]() {
+        listenForMessages(client_socket, chatText);
+    });
+
+    client_thread.detach();
+
+    QObject::connect(sendButton, &QPushButton::clicked, [inputText, chatText, client_socket](){
         QString message = inputText->text();
         QString username = "You: ";
         if(!message.isEmpty()){
@@ -945,9 +985,12 @@ void showChatWindow() {
             // bsoncxx::document::view message_info_view = message_info.view();
             // coll.update_one({}, document{} << "$push" << open_document << "messages" << message_info_view << close_document << finalize);
 
-            // chatText->append("<b>" + username + "</b>" + message);
-            // chatText->setAlignment(Qt::AlignRight);
-            // inputText->clear();
+            // std::cout << "CLIENT " << client_socket << ": " << message.toStdString() << std::endl;
+            send(client_socket, message.toStdString().c_str(), strlen(message.toStdString().c_str()), 0);
+
+            chatText->append("<b>" + username + "</b>" + message);
+            chatText->setAlignment(Qt::AlignRight);
+            inputText->clear();
         }
     //     bsoncxx::document::value message_info = bsoncxx::builder::stream::document{} << "from" << 0 << "message" << "Hello?" << bsoncxx::builder::stream::finalize;
     //    bsoncxx::document::view message_info_view = message_info.view();
@@ -1061,8 +1104,8 @@ void showEnterCodeWindow() {
         // Allow for 2 connections
         // int fd_size = 2;
 
-        joinServer(code);
-        showChatWindow();
+        int client_socket = joinServer(code);
+        showChatWindow(client_socket);
 
         // coll = db[code];
         // auto result = coll.update_one(document{} << "secured" << false << finalize,
@@ -1136,10 +1179,10 @@ void showCodeWindow() {
     startChattingButton->setFixedSize(QSize(100, 40));
     startChattingButton->setStyleSheet("background-color: #f0f0f0; border-radius: 10px; color: black");
            
-    QObject::connect(startChattingButton, &QPushButton::clicked, [&](){
+    QObject::connect(startChattingButton, &QPushButton::clicked, [code](){
         // window->hide();
-        joinServer(code);
-        showChatWindow();
+        int client_socket = joinServer(code);
+        showChatWindow(client_socket);
     });
 
     QVBoxLayout* btnLayout = new QVBoxLayout;
