@@ -12,9 +12,9 @@ if(NOT DEFINED CMAKE_CXX_STANDARD)
 endif()
 
 set(CMAKE_CXX_EXTENSIONS OFF)
-set(Qt6_DIR /Users/salmannavroz/Qt/6.4.2/macos/lib/cmake/Qt6/)
-set(Qt6CoreTools_DIR /Users/salmannavroz/Qt/6.4.2/macos/lib/cmake/Qt6CoreTools)
-set(Qt6GuiTools_DIR /Users/salmannavroz/Qt/6.4.2/macos/lib/cmake/Qt6GuiTools)
+set(Qt6_DIR /Users/hritikbharucha/Qt/6.4.0/macos/lib/cmake/Qt6/)
+set(Qt6CoreTools_DIR /Users/hritikbharucha/Qt/6.4.0/macos/lib/cmake/Qt6CoreTools)
+set(Qt6GuiTools_DIR /Users/hritikbharucha/Qt/6.4.0/macos/lib/cmake/Qt6GuiTools)
 if (NOT CMAKE_CXX_COMPILER_ID STREQUAL "MSVC")
     set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -Wextra -Werror")
 endif()
@@ -23,9 +23,21 @@ message(STATUS "CMAKE_PREFIX_PATH: ${CMAKE_PREFIX_PATH}")
 
 find_package(mongocxx REQUIRED)
 find_package(Qt6 REQUIRED COMPONENTS Widgets)
+
 qt_standard_project_setup()
 # Add your source files here
-add_executable(PleaseWork main.cpp)
+add_executable(PleaseWork main.cpp MyLineEdit.cpp)
+find_package(Threads REQUIRED)
+
+add_executable(server server.cpp chat_utils.hpp)
+add_executable(client client.cpp chat_utils.hpp)
+
+target_link_libraries(server Threads::Threads)
+target_link_libraries(client Threads::Threads)
+
+set(CPACK_PROJECT_NAME ${PROJECT_NAME})
+set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
+include(CPack)
 
 # Visual Studio pre 2017 requires boost polyfill.
 if (CMAKE_CXX_COMPILER_ID STREQUAL "MSVC")

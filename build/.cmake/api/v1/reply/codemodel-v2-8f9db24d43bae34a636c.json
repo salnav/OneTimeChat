@@ -49,7 +49,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "PleaseWork::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-PleaseWork-Debug-56dab7cad412500b86c2.json",
+					"jsonFile" : "target-PleaseWork-Debug-1a7f0a1981c336c52d20.json",
 					"name" : "PleaseWork",
 					"projectIndex" : 0
 				},
@@ -63,7 +63,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "client::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-client-Debug-f449e45f53513f0b01ad.json",
+					"jsonFile" : "target-client-Debug-ca014f180c85116a8b26.json",
 					"name" : "client",
 					"projectIndex" : 0
 				},
@@ -77,7 +77,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "server::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-server-Debug-790ed5eca135fa1f1323.json",
+					"jsonFile" : "target-server-Debug-aec0bd2ab568125d8c25.json",
 					"name" : "server",
 					"projectIndex" : 0
 				},

@@ -433,6 +433,7 @@ int joinServer(std::string serverIP) {
         perror("inet_pton");
         exit(1);
     }
+
     if (connect(client_fd, (struct sockaddr *)&server_addr, sizeof(server_addr)) == -1) {
         perror("connect");
         exit(1);
@@ -565,6 +566,10 @@ void showEnterCodeWindow() {
         if (IP == "") {
             std::cout << "Invalid Code" << std::endl;
             codeTextbox->setText("Invalid Code");
+            codeTextbox->setStyleSheet("color: red");
+        } else if (IP != getIPAddress()) {
+            std::cout << "Different IP" << std::endl;
+            codeTextbox->setText("Different IP");
             codeTextbox->setStyleSheet("color: red");
         } else {
             std::cout << "Connecting" << std::endl;
